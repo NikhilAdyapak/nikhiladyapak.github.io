@@ -7,13 +7,16 @@
   <a href="https://www.linkedin.com/in/nikhil-adyapak">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
+  <a href="https://github.com/NikhilAdyapak">
+    <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
   <a href="https://scholar.google.com/citations?hl=en&user=VAOBlIMAAAAJ">
     <img src="https://img.shields.io/badge/Google%20Scholar-Publications-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/>
   </a>
   <a href="mailto:nikhiladyapak31@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <a href="https://NikhilAdyapak.github.io/NIKHIL_ADYAPAK_resume.pdf" target="_blank">
+  <a href="https://NikhilAdyapak.github.io/NikhilAdyapak/NIKHIL_ADYAPAK_resume.pdf" target="_blank">
     <img src="https://img.shields.io/badge/Resume-View%20PDF-FF5722?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Resume"/>
 </a>
 
