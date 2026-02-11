@@ -1,29 +1,45 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,25,30&height=280&section=header&text=Nikhil%20Adyapak&fontSize=80&animation=fadeIn&fontAlignY=35&desc=ML%20Engineer%20%7C%20MLOps%20Specialist%20%7C%20Data%20Science%20%40%20UW-Madison&descAlignY=62&descAlign=50" alt="Header" width="100%"/>
-</div>
 
-<div align="center">
+  <table style="border: none; border-collapse: collapse; width: 100%; max-width: 800px;">
+    <tr style="border: none; background-color: transparent;">
+      
+      <td style="width: 20%; padding-right: 20px; vertical-align: middle; border: none;">
+        <img src="https://github.com/NikhilAdyapak.png" alt="Profile Pic" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; border: 4px solid #58a6ff;">
+      </td>
+
+      <td style="width: 80%; vertical-align: middle; border: none;">
+        <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=30&pause=1000&color=3776AB&width=550&lines=Hey+there!+I'm+Nikhil+Adyapak;MS+Data+Science+%40+UW-Madison;Ex-Senior+Engineer+%40+Bosch;MLOps+%7C+Distributed+Systems+%7C+AI" alt="Typing SVG" />
+      </td>
+
+    </tr>
+  </table>
+
+  <br />
   
   <a href="https://www.linkedin.com/in/nikhil-adyapak">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
+  
   <a href="https://github.com/NikhilAdyapak">
     <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
+
   <a href="https://scholar.google.com/citations?hl=en&user=VAOBlIMAAAAJ">
     <img src="https://img.shields.io/badge/Google%20Scholar-Publications-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/>
   </a>
+  
   <a href="mailto:nikhiladyapak31@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <a href="https://NikhilAdyapak.github.io/NikhilAdyapak/NIKHIL_ADYAPAK_resume.pdf" target="_blank">
+  
+  <a href="./NIKHIL_ADYAPAK_resume.pdf" target="_blank">
     <img src="https://img.shields.io/badge/Resume-View%20PDF-FF5722?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Resume"/>
-</a>
+  </a>
 
   <br />
   <br />
 
-  <img src="https://komarev.com/ghpvc/?username=NikhilAdyapak&label=Profile%20Views&color=blueviolet&style=flat" alt="Profile Views" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NikhilAdyapak&theme=radical&hide_border=true" height="150" alt="Streak" />
 
 </div>
 
