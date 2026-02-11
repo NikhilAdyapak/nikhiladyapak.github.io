@@ -1,19 +1,40 @@
-<div align="center">
+<div align="center" style="position: relative;">
 
-  <img src="https://github.com/NikhilAdyapak.png?size=400" 
-       alt="Profile Pic" 
-       style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 5px solid #58a6ff; margin-bottom: -30px; position: relative; z-index: 2;">
-  
-  <br/>
-
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,25,30&height=220&section=header&text=Nikhil%20Adyapak&fontSize=70&animation=fadeIn&fontAlignY=60&desc=ML%20Engineer%20%7C%20MLOps%20Specialist%20%7C%20Data%20Science%20%40%20UW-Madison&descAlignY=80&descAlign=50" 
-       alt="Header" 
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,25,30&height=280&section=header&text=%20&fontSize=80&animation=fadeIn" 
+       alt="Background Wave" 
        width="100%"
-       style="position: relative; z-index: 1; margin-top: -50px;">
+       style="position: relative; z-index: 1;">
 
+  <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; width: 90%;">
+    
+    <table style="border: none; border-collapse: collapse; width: 100%; background: transparent;">
+      <tr style="border: none; background: transparent;">
+        
+        <td style="width: 250px; padding-right: 20px; border: none; text-align: right;">
+          <img src="https://github.com/NikhilAdyapak.png?size=400" 
+               alt="Profile Pic" 
+               style="border-radius: 50%; width: 180px; height: 180px; object-fit: cover; border: 4px solid #58a6ff; box-shadow: 0 0 15px rgba(0,0,0,0.5);">
+        </td>
+
+        <td style="border: none; text-align: left; vertical-align: middle;">
+          
+          <h1 style="color: white; font-size: 55px; margin: 0; padding: 0; line-height: 1; text-shadow: 2px 2px 4px rgba(0,0,0,0.6);">
+            Nikhil Adyapak
+          </h1>
+          
+          <a href="https://git.io/typing-svg">
+            <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=500&size=22&pause=1000&color=F7F7F7&width=500&lines=ML+Engineer+%7C+MLOps+Specialist;MS+Data+Science+%40+UW-Madison;Ex-Senior+Engineer+%40+Bosch" alt="Typing SVG" />
+          </a>
+
+        </td>
+      </tr>
+    </table>
+
+  </div>
 </div>
 
 <div align="center">
+  <br />
   <a href="https://www.linkedin.com/in/nikhil-adyapak">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
@@ -41,10 +62,10 @@
 
 ### 👨‍💻 **About Me**
 
-I am a **Master's in Data Science student at the University of Wisconsin-Madison** (GPA 3.65/4.0). 
-Previously, I was a **Senior Software Engineer at Bosch (BGSW)**, where I specialized in **MLOps**, **Distributed Cloud Workflows**, and **Autonomous Driving (ADAS)** systems.
+[cite_start]I am a **Master's in Data Science student at the University of Wisconsin-Madison** (GPA 3.65/4.0)[cite: 4, 5, 6]. 
+[cite_start]Previously, I was a **Senior Software Engineer at Bosch (BGSW)**, where I specialized in **MLOps**, **Distributed Cloud Workflows**, and **Autonomous Driving (ADAS)** systems[cite: 13, 14, 15].
 
-Currently, I am serving as a **Graduate Teaching Assistant** for *CS 564: Database Management Systems*.
+[cite_start]Currently, I am serving as a **Graduate Teaching Assistant** for *CS 564: Database Management Systems*[cite: 8].
 
 ---
 
