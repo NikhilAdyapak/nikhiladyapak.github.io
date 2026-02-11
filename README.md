@@ -30,6 +30,11 @@
     <img src="https://img.shields.io/badge/Resume-View%20PDF-FF5722?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Resume"/>
   </a>
 
+  <br />
+  <br />
+
+  <img src="https://komarev.com/ghpvc/?username=NikhilAdyapak&label=Profile%20Views&color=blueviolet&style=flat" alt="Profile Views" />
+
 </div>
 
 ---
