@@ -14,26 +14,36 @@
 </div>
 
 <div align="center">
+  <br />
+
   <a href="https://www.linkedin.com/in/nikhil-adyapak">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="https://github.com/NikhilAdyapak">
-    <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  <a href="https://scholar.google.com/citations?hl=en&user=VAOBlIMAAAAJ">
-    <img src="https://img.shields.io/badge/Google%20Scholar-Publications-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/>
-  </a>
+  &nbsp;
   <a href="mailto:nikhiladyapak31@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
+  &nbsp;
+  <a href="https://scholar.google.com/citations?hl=en&user=VAOBlIMAAAAJ">
+    <img src="https://img.shields.io/badge/Scholar-Publications-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/>
+  </a>
+
+  <br />
+  <br />
+
   <a href="https://nikhiladyapak.github.io/NIKHIL_ADYAPAK_resume.pdf" target="_blank">
     <img src="https://img.shields.io/badge/Resume-View%20PDF-FF5722?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Resume"/>
+  </a>
+  &nbsp;
+  <a href="https://github.com/NikhilAdyapak">
+    <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
 
   <br />
   <br />
 
   <img src="https://komarev.com/ghpvc/?username=NikhilAdyapak&label=Profile%20Views&color=blueviolet&style=flat" alt="Profile Views" />
+
 
 </div>
 
