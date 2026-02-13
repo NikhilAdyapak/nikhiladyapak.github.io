@@ -51,7 +51,7 @@ a { text-decoration: none; transition: 0.3s; }
     position: relative;
     z-index: 10;
     text-align: center;
-    padding-bottom: 30px; /* Changed from 0 to 60px */
+    padding-bottom: 0px !important; /* Forces content to sit tight on the wave */
 }
 
 /* Profile Picture & Frame */
@@ -101,16 +101,17 @@ a { text-decoration: none; transition: 0.3s; }
 /* --- SECTIONS --- */
 
 .section { 
-    padding: 60px 0; /* Changed from 0 to 60px */
+    padding-top: 10px;    /* "0 or very less space" before Title */
+    padding-bottom: 50px; /* "less to medium space" after Content */
     border-bottom: 1px solid var(--border); 
 }
 
 
 .section-title { 
     font-size: 2rem; 
-    margin-bottom: 50px; /* Restored to 50px for cleaner look */
+    margin-top: 0;        /* No extra margin pushing it down */
+    margin-bottom: 30px;  /* Space between Title and Content */
     text-align: center; 
-    margin-top: 0; /* Reset top margin since we have padding now */
 }
 
 /* ABOUT */
