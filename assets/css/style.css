@@ -1,10 +1,10 @@
-/* RESET */
+/* RESET & VARIABLES */
 :root {
     --bg-color: #0d1117; /* GitHub Dark */
     --card-bg: #161b22;
     --text-primary: #c9d1d9;
     --text-secondary: #8b949e;
-    --accent: #58a6ff;
+    --accent: #58a6ff; /* GitHub Blue */
     --border: #30363d;
 }
 
@@ -18,34 +18,49 @@ body {
     overflow-x: hidden;
 }
 
+h1, h2, h3, h4 { color: #ffffff; }
 a { text-decoration: none; color: inherit; transition: 0.3s; }
-ul { list-style: none; }
 
 /* CONTAINER */
 .container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
 
-/* HERO SECTION */
+/* HERO SECTION - THE FIX */
 .hero {
-    min-height: 85vh; /* Reduced height to make it feel less long */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     position: relative;
+    /* This height allows the wave to be the bottom */
+    min-height: 80vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: radial-gradient(circle at top, #1c2128 0%, #0d1117 100%);
-    padding-top: 60px;
+    padding-bottom: 150px; /* Space for the wave at bottom */
 }
 
-.hero-container { z-index: 5; margin-bottom: 40px; }
+/* The Wave sits absolutely at the bottom */
+.wave-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 1; /* Behind the text if they overlap, but mostly below */
+}
+.wave-background img { width: 100%; display: block; opacity: 0.8; }
+
+/* The Text sits on top (Z-Index 2) */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
 
 .profile-pic {
-    width: 180px;
-    height: 180px;
+    width: 180px; height: 180px;
     border-radius: 50%;
     border: 5px solid var(--accent);
     box-shadow: 0 0 30px rgba(88, 166, 255, 0.3);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     animation: float 6s ease-in-out infinite;
     object-fit: cover;
 }
@@ -56,107 +71,103 @@ ul { list-style: none; }
     100% { transform: translateY(0px); }
 }
 
-.hero-text h1 { font-size: 3rem; font-weight: 700; color: #fff; margin-bottom: 5px; }
-.hero-text h2 { font-size: 1.1rem; font-weight: 500; color: var(--accent); margin-bottom: 10px; }
-.hero-text p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 20px; }
+.hero-text h1 { font-size: 3.5rem; font-weight: 700; margin-bottom: 10px; }
+.hero-text h2 { font-size: 1.1rem; color: var(--accent); margin-bottom: 10px; font-weight: 500; }
+.hero-text p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 25px; }
 
 .social-links a { font-size: 1.8rem; margin: 0 12px; color: var(--text-secondary); }
-.social-links a:hover { color: var(--accent); }
+.social-links a:hover { color: var(--accent); transform: translateY(-3px); }
 
 .btn-primary {
     display: inline-block;
     margin-top: 25px;
-    padding: 10px 25px;
+    padding: 12px 30px;
     border: 2px solid var(--accent);
     color: var(--accent);
     font-weight: 600;
     border-radius: 50px;
+    background: rgba(13, 17, 23, 0.8); /* Semi-transparent background for readability */
 }
 .btn-primary:hover { background: var(--accent); color: #fff; }
 
-/* THE WAVE IMAGE FIX */
-.wave-wrapper {
-    width: 100%;
-    line-height: 0;
-    margin-bottom: -1px; /* Removes any tiny gap */
-}
-.wave-wrapper img {
-    width: 100%;
-    display: block;
-    /* This negative margin pulls the next section up slightly to blend if needed */
+/* SECTIONS */
+.section { padding: 80px 0; border-bottom: 1px solid var(--border); }
+.section-title { font-size: 2rem; margin-bottom: 50px; text-align: center; position: relative; }
+.section-title::after {
+    content: ''; display: block; width: 60px; height: 4px;
+    background: var(--accent); margin: 10px auto 0; border-radius: 2px;
 }
 
-/* COMPACT ABOUT SECTION */
-.section { padding: 60px 0; border-bottom: 1px solid var(--border); }
-.section-title { font-size: 1.8rem; margin-bottom: 40px; color: #fff; text-align: center; }
-
-.about-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; /* Side by Side on Desktop */
-    gap: 40px; 
-    align-items: center;
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+.about-text p { margin-bottom: 20px; font-size: 1.05rem; }
+.hiring-note { 
+    background: rgba(88, 166, 255, 0.1); 
+    padding: 15px; border-left: 4px solid var(--accent); 
+    border-radius: 4px; font-size: 0.95rem; 
 }
-.about-text p { margin-bottom: 15px; font-size: 1rem; }
-.about-text strong { color: #fff; }
 
-.core-areas { display: flex; flex-direction: column; gap: 15px; }
+.core-areas { display: flex; flex-direction: column; gap: 20px; }
 .area-card {
-    background: var(--card-bg);
-    padding: 15px 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
+    background: var(--card-bg); padding: 20px;
+    border-radius: 8px; border: 1px solid var(--border);
+    display: flex; gap: 20px; align-items: flex-start;
 }
-.area-card i { font-size: 1.5rem; color: var(--accent); margin-top: 3px; }
-.area-card h4 { font-size: 1rem; color: #fff; margin-bottom: 3px; }
-.area-card p { font-size: 0.85rem; color: var(--text-secondary); margin: 0; }
+.area-card i { font-size: 1.8rem; color: var(--accent); margin-top: 5px; }
+.area-card h4 { font-size: 1.1rem; margin-bottom: 5px; }
+.area-card p { font-size: 0.9rem; color: var(--text-secondary); margin: 0; }
 
-/* BADGES GRID */
-.badges-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; }
-.badge-group { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
-.badge-group img { height: 25px; }
-.subsection-title { text-align: center; color: var(--text-secondary); font-size: 1rem; margin-bottom: 20px; }
+/* TECH STACK (Grid Layout) */
+.skills-grid-layout { display: flex; flex-direction: column; gap: 30px; }
+.skill-category h3 { text-align: center; font-size: 1.1rem; color: var(--accent); margin-bottom: 15px; }
+.badge-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+.badge-container img { height: 28px; }
 
 /* TIMELINE (Experience) */
-.timeline { max-width: 800px; margin: 0 auto; border-left: 2px solid var(--border); padding-left: 30px; }
-.timeline-item { position: relative; margin-bottom: 40px; }
+.timeline { position: relative; max-width: 800px; margin: 0 auto; border-left: 2px solid var(--border); padding-left: 40px; }
+.timeline-item { position: relative; margin-bottom: 50px; }
 .timeline-dot {
-    position: absolute; left: -39px; top: 5px;
+    position: absolute; left: -49px; top: 5px;
     width: 16px; height: 16px; background: var(--accent);
     border-radius: 50%; border: 3px solid var(--bg-color);
 }
-.timeline-date { font-size: 0.85rem; color: var(--accent); font-weight: 600; margin-bottom: 5px; }
-.timeline-content h3 { font-size: 1.2rem; color: #fff; }
-.timeline-content h4 { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 10px; }
-.timeline-content ul { padding-left: 18px; }
-.timeline-content li { font-size: 0.95rem; color: var(--text-primary); margin-bottom: 8px; }
+.timeline-date { color: var(--accent); font-weight: 600; font-size: 0.9rem; margin-bottom: 5px; }
+.timeline-content h3 { font-size: 1.3rem; margin-bottom: 2px; }
+.timeline-content h4 { font-size: 1rem; color: var(--text-secondary); margin-bottom: 15px; }
+.timeline-content ul { padding-left: 18px; margin-top: 10px; }
+.timeline-content li { margin-bottom: 8px; font-size: 0.95rem; color: var(--text-primary); }
 
-/* PROJECTS GRID */
-.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.project-card {
-    background: var(--card-bg);
-    padding: 20px;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    transition: 0.3s;
+/* PROJECTS & CARDS */
+.projects-grid, .awards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+.project-card, .award-card {
+    background: var(--card-bg); padding: 25px;
+    border-radius: 10px; border: 1px solid var(--border);
+    transition: 0.3s; display: flex; flex-direction: column;
 }
-.project-card:hover { border-color: var(--accent); transform: translateY(-3px); }
-.project-card h3 { font-size: 1.1rem; color: #fff; margin-bottom: 5px; }
-.badge { font-size: 0.75rem; background: rgba(88, 166, 255, 0.1); color: var(--accent); padding: 2px 8px; border-radius: 4px; }
-.project-card p { font-size: 0.9rem; color: var(--text-secondary); margin: 10px 0; }
-.card-links a { font-size: 0.9rem; color: var(--accent); font-weight: 600; margin-right: 15px; }
+.project-card:hover, .award-card:hover { transform: translateY(-5px); border-color: var(--accent); }
 
-/* Highlight Cards (Awards/Volunteering) */
-.highlight-card { border-left: 3px solid var(--accent); }
+.card-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 10px; }
+.project-card h3, .award-card h4 { font-size: 1.1rem; }
+.badge { font-size: 0.75rem; background: rgba(88, 166, 255, 0.15); color: var(--accent); padding: 2px 8px; border-radius: 4px; white-space: nowrap; }
+.project-card p { font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px; flex-grow: 1; }
+.card-links { border-top: 1px solid var(--border); padding-top: 15px; }
+.card-links a { font-size: 0.9rem; color: var(--accent); margin-right: 15px; font-weight: 500; }
+.card-links a:hover { text-decoration: underline; }
+
+/* AWARDS SPECIFIC */
+.award-card { flex-direction: row; align-items: center; gap: 20px; }
+.award-icon { font-size: 2rem; color: var(--accent); }
+.award-card div p { font-size: 0.9rem; color: var(--text-secondary); margin: 0; }
+.award-card div small { color: var(--text-secondary); opacity: 0.8; }
 
 /* FOOTER */
-.footer { text-align: center; padding: 40px 0; }
-.stats-img { max-width: 100%; height: auto; margin-bottom: 20px; }
+.footer { text-align: center; padding: 50px 0; }
+.stats-img { max-width: 100%; }
 
-/* RESPONSIVE */
+/* MOBILE */
 @media (max-width: 768px) {
     .about-grid { grid-template-columns: 1fr; }
-    .hero-text h1 { font-size: 2.2rem; }
+    .hero-text h1 { font-size: 2.5rem; }
+    .timeline { padding-left: 20px; }
+    .timeline-dot { left: -29px; }
 }

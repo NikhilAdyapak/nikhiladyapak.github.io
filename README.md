@@ -18,15 +18,15 @@
 <div align="center">
   <br />
 
-  <a href="https://www.linkedin.com/in/nikhil-adyapak">
+  <a href="https://www.linkedin.com/in/nikhil-adyapak" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
   &nbsp;
-  <a href="mailto:nikhiladyapak31@gmail.com">
+  <a href="mailto:nikhiladyapak31@gmail.com" target="_blank">
     <img src="https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
   &nbsp;
-  <a href="https://scholar.google.com/citations?hl=en&user=VAOBlIMAAAAJ">
+  <a href="https://scholar.google.com/citations?hl=en&user=VAOBlIMAAAAJ" target="_blank">
     <img src="https://img.shields.io/badge/Scholar-Publications-4285F4?style=for-the-badge&logo=google-scholar&logoColor=white" alt="Google Scholar"/>
   </a>
 
@@ -37,15 +37,14 @@
     <img src="https://img.shields.io/badge/Resume-View%20PDF-FF5722?style=for-the-badge&logo=adobe-acrobat-reader&logoColor=white" alt="Resume"/>
   </a>
   &nbsp;
-  <a href="https://github.com/NikhilAdyapak">
+  <a href="https://github.com/NikhilAdyapak" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-View%20Profile-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
 
   <br />
   <br />
 
-  <img src="https://komarev.com/ghpvc/?username=NikhilAdyapak&label=Profile%20Views&color=blueviolet&style=flat" alt="Profile Views" />
-
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NikhilAdyapak&theme=radical&hide_border=true" height="150" alt="Streak" />
 
 </div>
 
@@ -53,10 +52,15 @@
 
 ### 👨‍💻 **About Me**
 
-I am a **Master's in Data Science student at the University of Wisconsin-Madison** (GPA 3.65/4.0). 
-Previously, I was a **Senior Software Engineer at Bosch (BGSW)**, where I specialized in **MLOps**, **Distributed Cloud Workflows**, and **Autonomous Driving (ADAS)** systems.
+I am a **Master's in Data Science student at the University of Wisconsin-Madison** (GPA 3.65/4.0) and a former **Senior Software Engineer at Bosch (BGSW)**. 
 
-Currently, I am serving as a **Graduate Teaching Assistant** for *CS 564: Database Management Systems*.
+I specialize in the engineering side of AI—designing, scaling, and operating production-grade ML systems. My industry experience focuses on three core areas:
+
+1.  **MLOps as a Service:** Building platforms that enable teams to train, version, deploy, and monitor models at scale (Azure ML, MLflow).
+2.  **Distributed ML Systems:** Architecting scalable training infrastructure using **Ray** on **Kubernetes (AKS)** to accelerate large-scale experiments.
+3.  **Search & Retrieval:** Engineering image retrieval systems for autonomous driving (CLIP, ElasticSearch) to discover edge cases.
+
+Currently, I am also a **Graduate Teaching Assistant** for *CS 564: Database Management Systems*.
 
 ---
 
@@ -104,22 +108,32 @@ Currently, I am serving as a **Graduate Teaching Assistant** for *CS 564: Databa
 
 ---
 
+### ⚡ **Professional Experience & Highlights**
+
+* **Distributed ML on Kubernetes:** Designed and scaled a **Ray Cluster** system on Azure Kubernetes Service (AKS), reducing retraining cycles by **75%** (4 weeks → 1 week) for 30+ teams.
+* **Production MLOps Platform:** Delivered an end-to-end platform (Azure ML + MLflow) for pedestrian detection, enabling multi-GPU training (3x faster) and reducing GPU costs by **60%**.
+* **Search Engine for Autonomous Driving:** Built a **60M+ image search engine** using **CLIP embeddings** & ElasticSearch to discover corner cases, reducing reviewer triage time by **95%** (4 hours → 10 minutes).
+* **Secure LLM Deployment:** Deployed an on-prem Ollama LLM with a Python FastAPI wrapper, ensuring zero external data egress for 150+ internal users.
+
+---
+
 ### 🚀 **Featured Projects & Publications**
 
 | Project | Description | Code & Publications |
 | :--- | :--- | :--- |
-| **Code Runtime Complexity Prediction** | **(Springer 2023)** Predicted Big-O complexity using static analysis and BiLSTM over AST graph embeddings with **96% accuracy**. | 📄 [**DOI Link**](https://doi.org/10.1007/978-981-99-7622-5_26)<br>💻 [**Core Repo**](https://github.com/NikhilAdyapak/CodeRuntimeComplexity)<br>🧪 [**Experiments**](https://github.com/NikhilAdyapak/Code_Complexity_Training_Experiments)<br>📊 [**Dataset**](https://github.com/NikhilAdyapak/Time_Complexity_Dataset) |
-| **MLOps Pipeline for Pedestrian Detection** | Built an end-to-end MLOps lifecycle using **DVC + MLflow** on Azure. Enabled multi-GPU training and reduced costs by 60%. | 💻 [**MLOps DVC Pipeline**](https://github.com/NikhilAdyapak/DVC_Detectron2) <br> 💻 [**MLOps Pedestrian Detection**](https://github.com/NikhilAdyapak/MLOps_Pipeline) |
-| **Decrypting Transposition Ciphers** | **(IEEE SmartGenCon)** Developed optimization techniques to break columnar transposition ciphers using Python. |  📄 [**DOI Link**](https://doi.org/10.1109/SMARTGENCON56628.2022.10083631)<br>💻 [**View Repo**](https://github.com/NikhilAdyapak/SingleColumnarTranspositionKeylessDecryption)<br> |
+| **Code Runtime Complexity Prediction** | **(Springer 2023)** Predicted Big-O complexity using static analysis and BiLSTM over AST graph embeddings with **96% accuracy**. | <a href="https://doi.org/10.1007/978-981-99-7622-5_26" target="_blank">📄 **DOI Link**</a><br><a href="https://github.com/NikhilAdyapak/CodeRuntimeComplexity" target="_blank">💻 **Core Repo**</a><br><a href="https://github.com/NikhilAdyapak/Code_Complexity_Training_Experiments" target="_blank">🧪 **Experiments**</a> |
+| **MLOps Pipeline for Pedestrian Detection** | Built an end-to-end MLOps lifecycle using **DVC + MLflow** on Azure. Enabled multi-GPU training and reduced costs by 60%. | <a href="https://github.com/NikhilAdyapak/DVC_Detectron2" target="_blank">💻 **DVC Pipeline**</a> <br> <a href="https://github.com/NikhilAdyapak/MLOps_Pipeline" target="_blank">💻 **Pedestrian Detection**</a> |
+| **Decrypting Transposition Ciphers** | **(IEEE SmartGenCon)** Developed optimization techniques to break columnar transposition ciphers using Python. | <a href="https://doi.org/10.1109/SMARTGENCON56628.2022.10083631" target="_blank">📄 **DOI Link**</a><br><a href="https://github.com/NikhilAdyapak/SingleColumnarTranspositionKeylessDecryption" target="_blank">💻 **View Repo**</a> |
 | **Distributed ML Training System** | Designed a **Ray Cluster** system on AKS, reducing retraining cycles by **75%** (4 weeks → 1 week) for 30+ teams. | 🔒 *Private (Work Experience)* |
 
 ---
 
-### ⚡ **Professional Highlights**
+### 🏆 **Awards & Volunteering**
 
-* **Distributed Systems:** Designed and scaled a Ray Cluster on Azure Kubernetes Service (AKS), supporting 30+ teams.
-* **LLM Security:** Deployed an on-prem Ollama LLM with a Python FastAPI wrapper, ensuring zero external data egress for 150+ users.
-* **Scene Understanding & GenAI:** Engineered an image retrieval pipeline using **Scene Graphs** (Hugging Face + Foundation Models), improving corner-case generation for complex driving scenarios.
+* **Top Achiever Award (2024):** Ranked 1st among 150+ engineers in the Data Engineering Unit at Bosch (BGSW).
+* **Best Presenter Award (2024):** Recognized for technical presentation excellence at the Data Engineering Department Meeting.
+* **Volunteering (Youth4Jobs):** Mentored candidates with disabilities in interview preparation and taught CS fundamentals to underprivileged students.
+* **Wildlife & Social Initiatives:** Supported elephant habitat restoration and agricultural initiatives funding stipends for differently-abled individuals.
 
 ---
 
