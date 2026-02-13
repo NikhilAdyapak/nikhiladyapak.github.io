@@ -3,79 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nikhil Adyapak | MLOps & Data Science</title>
+    <title>Nikhil Adyapak | AI Systems Engineer</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
 
     <header class="hero">
-        <div class="wave-background">
-            <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,25,30&height=300&section=header&text=%20&animation=fadeIn" alt="Wave">
-        </div>
-
+        
         <div class="container hero-content">
             <div class="profile-wrapper">
                 <img src="https://github.com/NikhilAdyapak.png?size=400" alt="Nikhil Adyapak" class="profile-pic">
+                <div class="status-badge"><i class="fas fa-code"></i> Building AI Systems</div>
             </div>
             
             <div class="hero-text">
                 <h1>Nikhil Adyapak</h1>
-                <h2>MS Data Science @ UW-Madison | MLOps • Machine Learning Engineer • Data Engineer</h2>
-                <p>Ex-Senior Software Engineer @ Bosch (ADAS) | ML Systems, Cloud & Distributed AI</p>
+                <h2 class="tagline">Engineering Scalable AI & <span class="highlight">Distributed Systems</span></h2>
+                <p class="sub-text">
+                    Master's in Data Science @ UW-Madison. Formerly optimizing multi-GPU training clusters at <strong>Bosch</strong>.
+                </p>
                 
-                <div class="social-links">
-                    <a href="https://linkedin.com/in/nikhil-adyapak" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/NikhilAdyapak" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="mailto:nikhiladyapak31@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://scholar.google.com/citations?hl=en&user=VAOBlIMAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                <div class="contact-bar">
+                    <a href="https://linkedin.com/in/nikhil-adyapak" target="_blank" class="glass-btn linkedin">
+                        <i class="fab fa-linkedin"></i> <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/NikhilAdyapak" target="_blank" class="glass-btn github">
+                        <i class="fab fa-github"></i> <span>GitHub</span>
+                    </a>
+                    <a href="mailto:nikhiladyapak31@gmail.com" class="glass-btn email">
+                        <i class="fas fa-envelope"></i> <span>Email</span>
+                    </a>
+                    <a href="NIKHIL_ADYAPAK_resume.pdf" target="_blank" class="glass-btn resume">
+                        <i class="fas fa-file-pdf"></i> <span>Resume</span>
+                    </a>
                 </div>
-
-                <a href="NIKHIL_ADYAPAK_resume.pdf" target="_blank" class="btn-primary">
-                    <i class="fas fa-file-pdf"></i> View Resume
-                </a>
             </div>
+        </div>
+
+        <div class="wave-background">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(88, 166, 255, 0.05)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(88, 166, 255, 0.03)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#0d1117" /> </g>
+            </svg>
         </div>
     </header>
 
     <section class="section about" id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
             <div class="about-grid">
                 <div class="about-text">
-                    <p>
-                        I am a <strong>Master's in Data Science student at the University of Wisconsin–Madison</strong> with <strong>2+ years of industry experience</strong> building machine learning systems in production at Bosch (ADAS).
+                    <h2 class="section-title">The Engineering Approach</h2>
+                    <p class="lead">
+                        I don't just train models; I build the <strong>infrastructure</strong> that makes them scalable, reliable, and production-ready.
                     </p>
                     <p>
-                        I specialize in the engineering side of AI—designing, scaling, and operating production-grade ML systems. My core strengths lie in <strong>MLOps, Distributed Training, and Cloud Infrastructure</strong>.
+                        With 2+ years at Bosch, I engineered systems that slashed training times from weeks to days. Now at UW-Madison, I'm bridging the gap between <strong>Data Science research</strong> and <strong>Systems Engineering</strong>.
                     </p>
-                    <p class="hiring-note">
-                        <i class="fas fa-bullhorn"></i> I am actively seeking <strong>Summer 2026 Internships</strong> (May–Aug) and Co-ops (July–Dec) in Machine Learning Engineering, MLOps, and Data Science.
-                    </p>
+                    <div class="hiring-box">
+                        <i class="fas fa-search-location"></i>
+                        <span>Seeking <strong>Summer 2026 Internships</strong> in MLOps & ML Engineering.</span>
+                    </div>
                 </div>
-                <div class="core-areas">
-                    <div class="area-card">
-                        <i class="fas fa-infinity"></i>
-                        <div>
-                            <h4>MLOps & ML Systems</h4>
-                            <p>End-to-end automation with MLflow, DVC, and CI/CD pipelines.</p>
-                        </div>
+                
+                <div class="expertise-cards">
+                    <div class="card">
+                        <div class="icon-box blue"><i class="fas fa-cubes"></i></div>
+                        <h4>ML Infrastructure</h4>
+                        <p>Architecting Kubernetes (AKS) clusters for distributed Ray training.</p>
                     </div>
-                    <div class="area-card">
-                        <i class="fas fa-server"></i>
-                        <div>
-                            <h4>Distributed AI</h4>
-                            <p>Scaling training on Kubernetes (AKS) using Ray to cut cycles by 75%.</p>
-                        </div>
+                    <div class="card">
+                        <div class="icon-box purple"><i class="fas fa-rocket"></i></div>
+                        <h4>MLOps Engines</h4>
+                        <p>Automating lifecycles with MLflow & DVC to cut GPU costs by 60%.</p>
                     </div>
-                    <div class="area-card">
-                        <i class="fas fa-eye"></i>
-                        <div>
-                            <h4>Computer Vision</h4>
-                            <p>Transformers, CLIP, and 60M+ image retrieval systems for ADAS.</p>
-                        </div>
+                    <div class="card">
+                        <div class="icon-box green"><i class="fas fa-search"></i></div>
+                        <h4>Neural Search</h4>
+                        <p>Building 60M+ image retrieval engines with CLIP & ElasticSearch.</p>
                     </div>
                 </div>
             </div>
@@ -84,159 +97,111 @@
 
     <section class="section skills-section">
         <div class="container">
-            <h2 class="section-title">Tech Stack</h2>
-            <div class="skills-grid-layout">
-                
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="badge-container">
-                        <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-                        <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" alt="C">
-                        <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
-                        <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-                        <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
-                        <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R">
-                    </div>
+            <h2 class="section-title center">Technical Arsenal</h2>
+            <div class="badges-wrapper">
+                <div class="badge-group">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+                    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                    <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
                 </div>
-
-                <div class="skill-category">
-                    <h3>ML & Statistics</h3>
-                    <div class="badge-container">
-                        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
-                        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
-                        <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace">
-                        <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn">
-                        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
-                        <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=python&logoColor=white" alt="Matplotlib">
-                    </div>
+                <div class="badge-group">
+                    <img src="https://img.shields.io/badge/Ray-028CF0?style=for-the-badge&logo=ray&logoColor=white" alt="Ray">
+                    <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="K8s">
+                    <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
+                    <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
+                    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+                    <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLflow">
                 </div>
-
-                <div class="skill-category">
-                    <h3>MLOps & Workflows</h3>
-                    <div class="badge-container">
-                        <img src="https://img.shields.io/badge/Ray-028CF0?style=for-the-badge&logo=ray&logoColor=white" alt="Ray">
-                        <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLflow">
-                        <img src="https://img.shields.io/badge/DVC-945DD6?style=for-the-badge&logo=dvc&logoColor=white" alt="DVC">
-                        <img src="https://img.shields.io/badge/Argo-DF5A2D?style=for-the-badge&logo=argo&logoColor=white" alt="Argo">
-                        <img src="https://img.shields.io/badge/Azure%20ML-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure ML">
-                        <img src="https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus">
-                        <img src="https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white" alt="Grafana">
-                    </div>
+                <div class="badge-group">
+                    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+                    <img src="https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="HuggingFace">
+                    <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
                 </div>
-
-                <div class="skill-category">
-                    <h3>Cloud & Infrastructure</h3>
-                    <div class="badge-container">
-                        <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
-                        <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
-                        <img src="https://img.shields.io/badge/AKS-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="AKS">
-                        <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-                        <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
-                        <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="Actions">
-                        <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Databases & Tools</h3>
-                    <div class="badge-container">
-                        <img src="https://img.shields.io/badge/ElasticSearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white" alt="Elastic">
-                        <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="Postgres">
-                        <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-                        <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
-                        <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
-                        <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
-                        <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
     <section class="section experience" id="experience">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
+            <h2 class="section-title center">Professional Journey</h2>
             <div class="timeline">
                 
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jan 2026 - Present</div>
+                    <div class="timeline-icon uw-red">
+                        <i class="fas fa-university"></i>
+                    </div>
                     <div class="timeline-content">
-                        <h3>Graduate Teaching Assistant (CS564)</h3>
-                        <h4>University of Wisconsin-Madison | Madison, WI</h4>
-                        <p><strong>Course:</strong> Database Management Systems (Design & Implementation)</p>
+                        <span class="date">Jan 2026 - Present</span>
+                        <h3>Graduate Teaching Assistant</h3>
+                        <h4>University of Wisconsin-Madison</h4>
+                        <p class="role-desc">Database Management Systems (CS 564)</p>
                         <ul>
-                            <li>Mentoring 200+ students on database design, query optimization, and SQL/Python projects.</li>
-                            <li>Assisting with automated grading pipelines and course logistics.</li>
+                            <li>Leading 200+ students in database design, query optimization, and SQL implementation.</li>
+                            <li>Managing automated grading pipelines for Python/SQL assignments.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Aug 2023 - Aug 2025</div>
+                    <div class="timeline-icon bosch-brand">
+                        <i class="fas fa-building"></i>
+                    </div>
                     <div class="timeline-content">
+                        <span class="date">Aug 2023 - Aug 2025</span>
                         <h3>Senior Software Engineer (AI/ADAS)</h3>
-                        <h4>Bosch Global Software Technologies | Bengaluru, India</h4>
-                        <p><strong>Focus:</strong> MLOps, Distributed Systems, Search & Retrieval</p>
+                        <h4>Bosch Global Software Technologies</h4>
+                        <div class="tags">
+                            <span>Distributed Systems</span> <span>MLOps</span> <span>Search</span>
+                        </div>
                         <ul>
-                            <li><strong>Distributed ML on Kubernetes:</strong> Designed and scaled a Ray Cluster on AKS, reducing retraining cycles by <strong>75%</strong> (4 weeks → 1 week) for 30+ teams.</li>
-                            <li><strong>MLOps Platform:</strong> Built an end-to-end platform (Azure ML + MLflow) for pedestrian detection, enabling multi-GPU training and reducing GPU costs by <strong>60%</strong>.</li>
-                            <li><strong>Image Search Engine:</strong> Built a 60M+ image retrieval system using CLIP embeddings & ElasticSearch to discover corner cases, reducing triage time by <strong>95%</strong> (4 hrs → 10 mins).</li>
-                            <li><strong>Secure LLM:</strong> Deployed on-prem Ollama LLM with FastAPI wrapper, ensuring zero data egress for 150+ users.</li>
+                            <li><strong>Cluster Scaling:</strong> Architected a Ray Cluster on AKS, slashing retraining cycles by <strong>75%</strong> (4 weeks → 1 week) for 30+ teams.</li>
+                            <li><strong>Cost Optimization:</strong> Delivered an MLOps platform (Azure ML) that reduced GPU cloud costs by <strong>60%</strong> via efficient resource scheduling.</li>
+                            <li><strong>Neural Search:</strong> Built a 60M+ image retrieval engine (CLIP + ElasticSearch) to find edge cases, reducing triage time by 95%.</li>
+                            <li><strong>Security:</strong> Deployed secure on-prem LLMs (Ollama + FastAPI) with zero external data egress.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jan 2023 - May 2023</div>
+                    <div class="timeline-icon bosch-brand">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
                     <div class="timeline-content">
-                        <h3>Machine Learning Operations (MLOps) Intern</h3>
+                        <span class="date">Jan 2023 - May 2023</span>
+                        <h3>MLOps Intern</h3>
                         <h4>Bosch Global Software Technologies</h4>
                         <ul>
-                            <li>Built on-premise MLOps pipelines using DVC and MLflow, reducing model setup time from 1 week to 1 day.</li>
-                            <li>Containerized model deployments and built CI/CD workflows for Azure Container Instances.</li>
+                            <li>Engineered on-premise pipelines (DVC + MLflow), accelerating model setup from 1 week to 1 day.</li>
+                            <li>Implemented CI/CD workflows for containerized model deployment on Azure.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Sep 2022 - Dec 2022</div>
+                    <div class="timeline-icon pes-blue">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
                     <div class="timeline-content">
-                        <h3>Teaching Assistant (CS203)</h3>
-                        <h4>PES University | Bengaluru, India</h4>
+                        <span class="date">Sep 2022 - Dec 2022</span>
+                        <h3>Teaching Assistant (Statistics)</h3>
+                        <h4>PES University</h4>
                         <ul>
-                            <li>TA for Statistics for Data Science. Mentored 120+ students and delivered hands-on sessions on Hypothesis Testing and Supervised ML.</li>
-                            <li>Organized and judged departmental hackathons.</li>
+                            <li>Mentored 120+ students in Statistics for Data Science and Hypothesis Testing.</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Jun 2022 - Jul 2022</div>
-                    <div class="timeline-content">
-                        <h3>Summer Intern</h3>
-                        <h4>Bosch Global Software Technologies</h4>
-                        <ul>
-                            <li>Designed MLOps pipelines for object detection (YOLOv5, Detectron2).</li>
-                            <li>Implemented ensemble strategies and automated evaluation reports to improve model robustness.</li>
-                        </ul>
+                    <div class="timeline-icon pes-blue">
+                        <i class="fas fa-microscope"></i>
                     </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">May 2021 - Dec 2021</div>
                     <div class="timeline-content">
+                        <span class="date">May 2021 - Dec 2021</span>
                         <h3>Research Intern (Cryptography)</h3>
-                        <h4>Center for Information Security, Forensics and Cyber Resilience</h4>
+                        <h4>Center for Information Security (C-ISFCR)</h4>
                         <ul>
-                            <li>Developed novel cryptanalysis methods for columnar transposition ciphers using Python & Optimization.</li>
-                            <li>Published findings at IEEE SMARTGENCON 2022.</li>
+                            <li>Published novel cryptanalysis methods for columnar transposition ciphers at IEEE SMARTGENCON 2022.</li>
                         </ul>
                     </div>
                 </div>
@@ -247,54 +212,49 @@
 
     <section class="section projects" id="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title center">Featured Projects</h2>
             <div class="projects-grid">
                 
                 <div class="project-card">
-                    <div class="card-header">
-                        <h3>Code Runtime Complexity Prediction</h3>
-                        <span class="badge">Springer 2023</span>
+                    <div class="card-head">
+                        <i class="fas fa-code-branch icon"></i>
+                        <div class="links">
+                            <a href="https://github.com/NikhilAdyapak/CodeRuntimeComplexity" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://doi.org/10.1007/978-981-99-7622-5_26" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
                     </div>
-                    <p>Predicted Big-O complexity using static analysis and BiLSTM over AST graph embeddings with <strong>96% accuracy</strong>.</p>
-                    <div class="card-links">
-                        <a href="https://github.com/NikhilAdyapak/CodeRuntimeComplexity" target="_blank"><i class="fab fa-github"></i> Core Repo</a>
-                        <a href="https://doi.org/10.1007/978-981-99-7622-5_26" target="_blank"><i class="fas fa-external-link-alt"></i> Paper</a>
-                        <a href="https://github.com/NikhilAdyapak/Code_Complexity_Training_Experiments" target="_blank"><i class="fas fa-flask"></i> Experiments</a>
+                    <h3>Code Runtime Prediction</h3>
+                    <p>Predicted Big-O complexity using static analysis and BiLSTM over AST graph embeddings with <strong>96% accuracy</strong>. (Springer 2023)</p>
+                    <div class="tech-tags">
+                        <span>Python</span><span>BiLSTM</span><span>AST</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="card-header">
-                        <h3>MLOps Pipeline for Pedestrian Detection</h3>
-                        <span class="badge">DVC + MLflow</span>
+                    <div class="card-head">
+                        <i class="fas fa-project-diagram icon"></i>
+                        <div class="links">
+                            <a href="https://github.com/NikhilAdyapak/DVC_Detectron2" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
+                    <h3>Pedestrian Detection MLOps</h3>
                     <p>End-to-end MLOps lifecycle on Azure. Enabled multi-GPU training and reduced cloud costs by 60%.</p>
-                    <div class="card-links">
-                        <a href="https://github.com/NikhilAdyapak/DVC_Detectron2" target="_blank"><i class="fab fa-github"></i> DVC Pipeline</a>
-                        <a href="https://github.com/NikhilAdyapak/MLOps_Pipeline" target="_blank"><i class="fab fa-github"></i> Detection Repo</a>
+                    <div class="tech-tags">
+                        <span>DVC</span><span>MLflow</span><span>Azure</span>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="card-header">
-                        <h3>Decrypting Transposition Ciphers</h3>
-                        <span class="badge">IEEE SmartGenCon</span>
+                    <div class="card-head">
+                        <i class="fas fa-lock icon"></i>
+                        <div class="links">
+                            <a href="https://github.com/NikhilAdyapak/SingleColumnarTranspositionKeylessDecryption" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
                     </div>
-                    <p>Developed optimization techniques to break columnar transposition ciphers using Natural Language Processing.</p>
-                    <div class="card-links">
-                        <a href="https://github.com/NikhilAdyapak/SingleColumnarTranspositionKeylessDecryption" target="_blank"><i class="fab fa-github"></i> View Repo</a>
-                        <a href="https://doi.org/10.1109/SMARTGENCON56628.2022.10083631" target="_blank"><i class="fas fa-external-link-alt"></i> DOI Link</a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="card-header">
-                        <h3>Distributed ML Training System</h3>
-                        <span class="badge">Work Experience</span>
-                    </div>
-                    <p>Designed a Ray Cluster system on AKS, reducing retraining cycles by 75% (4 weeks → 1 week) for 30+ teams.</p>
-                    <div class="card-links">
-                        <span style="font-size: 0.9rem; color: #8b949e;"><i class="fas fa-lock"></i> Private (Bosch)</span>
+                    <h3>Cipher Decryption</h3>
+                    <p>Optimization techniques to break columnar transposition ciphers using NLP (IEEE SmartGenCon).</p>
+                    <div class="tech-tags">
+                        <span>NLP</span><span>Optimization</span><span>Python</span>
                     </div>
                 </div>
 
@@ -302,79 +262,40 @@
         </div>
     </section>
 
-    <section class="section awards" id="awards">
+    <section class="section community">
         <div class="container">
-            <h2 class="section-title">Awards & Recognition</h2>
-            <div class="awards-grid">
-                <div class="award-card">
-                    <i class="fas fa-trophy award-icon"></i>
-                    <div>
-                        <h4>Top Achiever Award (2024)</h4>
-                        <p>Bosch Global Software Technologies (Data Engineering Unit)</p>
-                        <small>Ranked 1st among 150+ engineers.</small>
-                    </div>
+            <h2 class="section-title center">Beyond Code</h2>
+            <div class="community-grid">
+                <div class="comm-card gold">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Top Achiever Award</h3>
+                    <p>Ranked 1st among 150+ engineers in Data Engineering at Bosch (2024).</p>
                 </div>
-                <div class="award-card">
-                    <i class="fas fa-microphone-alt award-icon"></i>
-                    <div>
-                        <h4>Best Presenter Award (2024)</h4>
-                        <p>Bosch Data Engineering Department Meeting</p>
-                    </div>
+                <div class="comm-card blue">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Youth4Jobs Mentor</h3>
+                    <p>Guided candidates with disabilities in tech interviews and taught CS fundamentals.</p>
                 </div>
-                <div class="award-card">
-                    <i class="fas fa-medal award-icon"></i>
-                    <div>
-                        <h4>Distinction Award</h4>
-                        <p>PES University (Semesters 3-6)</p>
-                    </div>
-                </div>
-                <div class="award-card">
-                    <i class="fas fa-star award-icon"></i>
-                    <div>
-                        <h4>MRD Scholarship</h4>
-                        <p>PES University (Top 20% of 1100+ students)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section volunteering" id="volunteering">
-        <div class="container">
-            <h2 class="section-title">Volunteering & Services</h2>
-            <div class="projects-grid">
-                
-                <div class="project-card">
-                    <h3>Youth4Jobs Volunteer</h3>
-                    <p>Guided candidates with disabilities in interview preparation and taught CS fundamentals to underprivileged students.</p>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Social Impact Initiatives</h3>
-                    <p>Assisted in agricultural initiatives where produce revenue funded monthly stipends for differently-abled individuals.</p>
-                </div>
-
-                <div class="project-card">
+                <div class="comm-card green">
+                    <i class="fas fa-leaf"></i>
                     <h3>Wildlife Conservation</h3>
-                    <p>Supported elephant habitat restoration and assisted in adoption drives for abandoned dogs (CUPA).</p>
+                    <p>Supported elephant habitat restoration and agricultural initiatives for social impact.</p>
                 </div>
-
-                <div class="project-card">
-                    <h3>Education Outreach</h3>
-                    <p>Created interactive educational materials for rural childcare centers (Anganwadis) and coached sports in government schools.</p>
-                </div>
-
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <section class="section stats">
         <div class="container">
-            <div class="stats-container">
-                <img src="https://github-readme-streak-stats.herokuapp.com/?user=NikhilAdyapak&theme=radical&hide_border=true" alt="Streak" class="stats-img">
+            <h2 class="section-title center">Coding Activity</h2>
+            <div class="stats-wrapper">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=NikhilAdyapak&theme=radical&hide_border=true&background=0d1117" alt="GitHub Streak">
             </div>
-            <p>&copy; 2026 Nikhil Adyapak</p>
         </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Nikhil Adyapak. Engineered with <i class="fas fa-heart" style="color: var(--accent);"></i></p>
     </footer>
 
     <script src="assets/js/main.js"></script>
