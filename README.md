@@ -1,12 +1,14 @@
 <div align="center">
 
-  <img src="https://github.com/NikhilAdyapak.png?size=400" 
+  <img class="profile-pic" 
+       src="https://github.com/NikhilAdyapak.png?size=400" 
        alt="Profile Pic" 
        style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover; border: 5px solid #58a6ff; margin-bottom: -30px; position: relative; z-index: 2;">
   
   <br/>
 
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,25,30&height=220&section=header&text=Nikhil%20Adyapak&fontSize=70&animation=fadeIn&fontAlignY=60&desc=ML%20Engineer%20%7C%20MLOps%20Specialist%20%7C%20Data%20Science%20%40%20UW-Madison&descAlignY=80&descAlign=50" 
+  <img class="wave-header" 
+       src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,25,30&height=220&section=header&text=Nikhil%20Adyapak&fontSize=70&animation=fadeIn&fontAlignY=60&desc=ML%20Engineer%20%7C%20MLOps%20Specialist%20%7C%20Data%20Science%20%40%20UW-Madison&descAlignY=80&descAlign=50" 
        alt="Header" 
        width="100%"
        style="position: relative; z-index: 1; margin-top: -50px;">

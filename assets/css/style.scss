@@ -29,3 +29,20 @@ table tr:nth-child(2n) {
 table th, table td {
   border: 1px solid #30363d !important;
 }
+
+
+/* MOBILE RESPONSIVENESS FIX */
+@media (max-width: 768px) {
+  /* 1. Reset the Profile Picture position on phones */
+  .profile-pic {
+    margin-bottom: 0px !important; /* No overlap */
+    width: 150px !important;      /* Slightly smaller for small screens */
+    height: 150px !important;
+  }
+
+  /* 2. Reset the Wave Header position on phones */
+  .wave-header {
+    margin-top: 0px !important;    /* No overlap */
+    transform: scale(1.1);         /* Slight zoom to ensure text is readable */
+  }
+}
