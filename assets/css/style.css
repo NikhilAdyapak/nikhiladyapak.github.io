@@ -101,9 +101,10 @@ a { text-decoration: none; transition: 0.3s; }
     border-bottom: 1px solid var(--border); 
 }
 
+
 .section-title { 
     font-size: 2.2rem; 
-    margin-bottom: 10px; /* Reduced from 50px */
+    margin-bottom: 30px; /* Reduced from 50px */
     text-align: center; 
 }
 
