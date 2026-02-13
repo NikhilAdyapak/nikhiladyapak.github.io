@@ -1,11 +1,16 @@
 ---
 ---
 
-/* 1. Force Dark Mode Background & Text */
+/* 1. Force Dark Mode & RESTORE LAPTOP WIDTH */
 body {
   background-color: #0d1117 !important; /* GitHub Dimmed Dark */
   color: #c9d1d9 !important; /* GitHub Light Text */
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif !important;
+  
+  /* THIS RESTORES THE CENTERED LAPTOP VIEW */
+  max-width: 1012px !important;
+  margin: 0 auto !important;
+  padding: 40px !important;
 }
 
 /* 2. Hide the default Header/Footer/Ribbon */
@@ -30,19 +35,24 @@ table th, table td {
   border: 1px solid #30363d !important;
 }
 
-
-/* MOBILE RESPONSIVENESS FIX */
+/* --- MOBILE RESPONSIVENESS FIX --- */
 @media (max-width: 768px) {
+  
+  /* Adjust body padding for phones so it's not too squeezed */
+  body {
+    padding: 20px !important;
+  }
+
   /* 1. Reset the Profile Picture position on phones */
   .profile-pic {
     margin-bottom: 0px !important; /* No overlap */
-    width: 150px !important;      /* Slightly smaller for small screens */
+    width: 150px !important;      /* Slightly smaller */
     height: 150px !important;
   }
 
   /* 2. Reset the Wave Header position on phones */
   .wave-header {
     margin-top: 0px !important;    /* No overlap */
-    transform: scale(1.1);         /* Slight zoom to ensure text is readable */
+    transform: scale(1.1);         /* Slight zoom */
   }
 }
