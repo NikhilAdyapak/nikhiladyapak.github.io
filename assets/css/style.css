@@ -47,7 +47,7 @@ a { text-decoration: none; transition: 0.3s; }
     position: relative;
     z-index: 10;
     text-align: center;
-    padding-bottom: 40px; /* Reduced from 80px */
+    padding-bottom: 0px !important; 
 }
 
 /* Profile Picture & Frame */
@@ -97,14 +97,15 @@ a { text-decoration: none; transition: 0.3s; }
 /* --- SECTIONS --- */
 
 .section { 
-    padding: 50px 0; /* Reduced from 80px */
+    padding: 0 0 !important;
     border-bottom: 1px solid var(--border); 
 }
 
 
 .section-title { 
-    font-size: 2.2rem; 
-    margin-bottom: 30px; /* Reduced from 50px */
+    font-size: 2rem; 
+    margin-top: 60px;
+    margin-bottom: 30px; 
     text-align: center; 
 }
 
