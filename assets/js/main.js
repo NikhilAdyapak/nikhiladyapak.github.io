@@ -9,18 +9,29 @@ var typed = new Typed(".typewriter", {
 // 2. SCROLL REVEAL ANIMATION
 const sr = ScrollReveal({
     origin: 'bottom',
-    distance: '60px',
+    distance: '50px',
     duration: 1000,
     delay: 200,
-    reset: false // Animations run only once
+    reset: false // Animations run only once for better performance
 });
 
-sr.reveal('.hero-content', {});
-sr.reveal('.about-text', {delay: 200});
+// Header
+sr.reveal('.hero-content', {delay: 100});
+
+// About
+sr.reveal('.section-title', {});
+sr.reveal('.about-content p', {delay: 200});
+sr.reveal('.area-card', {interval: 200});
+
+// Skills
+sr.reveal('.skill-category', {interval: 100});
+
+// Experience & Projects
 sr.reveal('.timeline-item', {interval: 200});
 sr.reveal('.project-card', {interval: 200});
+sr.reveal('.vol-card', {interval: 200});
 
-// 3. SMOOTH SCROLLING FOR ANCHOR LINKS
+// 3. SMOOTH SCROLLING
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
