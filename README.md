@@ -107,8 +107,8 @@ Currently, I am serving as a **Graduate Teaching Assistant** for *CS 564: Databa
 | Project | Description | Code & Publications |
 | :--- | :--- | :--- |
 | **Code Runtime Complexity Prediction** | **(Springer 2023)** Predicted Big-O complexity using static analysis and BiLSTM over AST graph embeddings with **96% accuracy**. | 📄 [**DOI Link**](https://doi.org/10.1007/978-981-99-7622-5_26)<br>💻 [**Core Repo**](https://github.com/NikhilAdyapak/CodeRuntimeComplexity)<br>🧪 [**Experiments**](https://github.com/NikhilAdyapak/Code_Complexity_Training_Experiments)<br>📊 [**Dataset**](https://github.com/NikhilAdyapak/Time_Complexity_Dataset) |
-| **MLOps Pipeline for Pedestrian Detection** | Built an end-to-end MLOps lifecycle using **DVC + MLflow** on Azure. Enabled multi-GPU training and reduced costs by 60%. | 💻 [**View Repo**](https://github.com/NikhilAdyapak/DVC_Detectron2) |
-| **Decrypting Transposition Ciphers** | **(IEEE SmartGenCon)** Developed optimization techniques to break columnar transposition ciphers using Python. | 💻 [**View Repo**](https://github.com/NikhilAdyapak/SingleColumnarTranspositionKeylessDecryption) |
+| **MLOps Pipeline for Pedestrian Detection** | Built an end-to-end MLOps lifecycle using **DVC + MLflow** on Azure. Enabled multi-GPU training and reduced costs by 60%. | 💻 [**MLOps DVC Pipeline**](https://github.com/NikhilAdyapak/DVC_Detectron2) <br> 💻 [**MLOps Pedestrian Detection**](https://github.com/NikhilAdyapak/MLOps_Pipeline) |
+| **Decrypting Transposition Ciphers** | **(IEEE SmartGenCon)** Developed optimization techniques to break columnar transposition ciphers using Python. |  📄 [**DOI Link**](https://doi.org/10.1109/SMARTGENCON56628.2022.10083631)<br>💻 [**View Repo**](https://github.com/NikhilAdyapak/SingleColumnarTranspositionKeylessDecryption)<br> |
 | **Distributed ML Training System** | Designed a **Ray Cluster** system on AKS, reducing retraining cycles by **75%** (4 weeks → 1 week) for 30+ teams. | 🔒 *Private (Work Experience)* |
 
 ---
