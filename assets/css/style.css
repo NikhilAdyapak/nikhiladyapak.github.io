@@ -108,6 +108,21 @@ a { text-decoration: none; transition: 0.3s; }
 }
 .hiring-box i { font-size: 1.5rem; }
 
+.hiring-note {
+    background: rgba(88, 166, 255, 0.1);
+    border-left: 4px solid var(--accent);
+    padding: 15px;
+    border-radius: 4px;
+    color: var(--accent);
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.hiring-note i { font-size: 1.5rem; }
+
 .core-areas { display: flex; flex-direction: column; gap: 20px; }
 .area-card {
     background: var(--card-bg); padding: 25px; border-radius: 12px; border: 1px solid var(--border);
