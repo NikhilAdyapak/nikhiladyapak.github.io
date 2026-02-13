@@ -45,9 +45,9 @@ a { text-decoration: none; transition: 0.3s; }
 
 .hero-content {
     position: relative;
-    z-index: 10; 
+    z-index: 10;
     text-align: center;
-    padding-bottom: 80px; 
+    padding-bottom: 40px; /* Reduced from 80px */
 }
 
 /* Profile Picture & Frame */
@@ -95,8 +95,18 @@ a { text-decoration: none; transition: 0.3s; }
 .social-btn i { font-size: 1.2rem; }
 
 /* --- SECTIONS --- */
-.section { padding: 80px 0; border-bottom: 1px solid var(--border); }
-.section-title { font-size: 2.2rem; margin-bottom: 50px; text-align: center; }
+
+.section { 
+    padding: 50px 0; /* Reduced from 80px */
+    border-bottom: 1px solid var(--border); 
+}
+
+
+.section-title { 
+    font-size: 2.2rem; 
+    margin-bottom: 30px; /* Reduced from 50px */
+    text-align: center; 
+}
 
 /* ABOUT */
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -146,7 +156,11 @@ a { text-decoration: none; transition: 0.3s; }
 .timeline::before {
     content: ''; position: absolute; left: 30px; top: 0; bottom: 0; width: 3px; background: var(--border);
 }
-.timeline-item { position: relative; margin-bottom: 60px; padding-left: 70px; }
+.timeline-item { 
+    position: relative; 
+    margin-bottom: 40px; /* Reduced from 60px */
+    padding-left: 70px; 
+}
 .timeline-logo-wrapper {
     position: absolute; left: 0; top: 0;
     width: 60px; height: 60px; border-radius: 50%;
