@@ -50,3 +50,47 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+/* --- Typewriter Effect --- */
+const roles = [
+    "Scalable ML Systems",
+    "Cloud Infrastructure",
+    "Distributed AI",
+    "Production MLOps"
+];
+
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typeSpeed = 100;
+const deleteSpeed = 50;
+const delayBetween = 2000;
+
+function typeWriter() {
+    const currentRole = roles[roleIndex];
+    const element = document.querySelector('.typewriter');
+    
+    if (isDeleting) {
+        element.textContent = currentRole.substring(0, charIndex - 1);
+        charIndex--;
+    } else {
+        element.textContent = currentRole.substring(0, charIndex + 1);
+        charIndex++;
+    }
+
+    let speed = isDeleting ? deleteSpeed : typeSpeed;
+
+    if (!isDeleting && charIndex === currentRole.length) {
+        speed = delayBetween; // Pause at end
+        isDeleting = true;
+    } else if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        roleIndex = (roleIndex + 1) % roles.length;
+        speed = 500; // Pause before next word
+    }
+
+    setTimeout(typeWriter, speed);
+}
+
+// Start the animation
+document.addEventListener('DOMContentLoaded', typeWriter);

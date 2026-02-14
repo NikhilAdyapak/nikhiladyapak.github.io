@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 /* Custom Scrollbar */
@@ -217,11 +218,32 @@ a { text-decoration: none; transition: 0.3s; }
 
 .card-head { display: flex; justify-content: space-between; margin-bottom: 15px; }
 .card-head .icon { font-size: 2rem; color: var(--text-muted); }
-.links a { 
-    font-size: 0.9rem; margin-left: 15px; color: var(--accent); font-weight: 600; 
-    border: 1px solid var(--accent); padding: 5px 12px; border-radius: 4px;
+/* Container for the links: Handles wrapping & spacing automatically */
+.links {
+    display: flex;
+    flex-wrap: wrap;       /* Allows buttons to drop to next line */
+    gap: 10px;             /* Adds space between buttons (horizontally AND vertically) */
+    justify-content: flex-end; /* Keeps them aligned to the right */
+    max-width: 70%;        /* Prevents them from squishing the icon too much */
 }
-.links a:hover { background: var(--accent); color: #fff; text-decoration: none; }
+
+/* The individual link buttons */
+.links a { 
+    font-size: 0.9rem; 
+    color: var(--accent); 
+    font-weight: 600; 
+    border: 1px solid var(--accent); 
+    padding: 5px 12px; 
+    border-radius: 4px;
+    white-space: nowrap;   /* Prevents text inside the button from breaking */
+    margin-left: 0;        /* REMOVED: gap handles this now */
+}
+
+.links a:hover { 
+    background: var(--accent); 
+    color: #fff; 
+    text-decoration: none; 
+}
 
 .project-card h3, .comm-card h3 { margin-bottom: 10px; font-size: 1.3rem; }
 .project-card p { color: var(--text-muted); flex-grow: 1; margin-bottom: 20px; font-size: 1rem; }
@@ -289,18 +311,46 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .about-grid { grid-template-columns: 1fr; }
-    .hero-text h1 { font-size: 2.8rem; }
-    .profile-pic { width: 220px; height: 220px; }
-    .timeline { padding-left: 0; }
-    .timeline::before { left: 29px; }
-    .comm-card { flex-direction: column; text-align: center; align-items: center; }
-    
     .navbar {
-        width: 90%; padding: 10px 15px;
+        width: 95%; /* Use more width on mobile */
+        padding: 10px 15px;
+        bottom: 20px; /* Option: Move to bottom for easier thumb reach */
+        top: auto;    /* Disable top if using bottom */
     }
+    
     .nav-links {
-        gap: 15px; width: 100%; justify-content: space-between;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start; /* Align left for scrolling */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        white-space: nowrap; /* Prevent text wrapping */
+        padding-bottom: 5px; /* Space for scrollbar */
+        
+        /* Hide scrollbar for cleaner look */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
     }
-    .nav-links a { font-size: 0.8rem; }
+    
+    /* Hide scrollbar for Chrome/Safari/Opera */
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .nav-links a { 
+        font-size: 0.9rem; 
+        padding: 5px 10px; /* larger touch target */
+    }
+}
+
+/* Typewriter Cursor Effect */
+.typewriter {
+    color: var(--accent);
+    border-right: 2px solid var(--accent); /* The cursor */
+    padding-right: 5px;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: var(--accent) }
 }
