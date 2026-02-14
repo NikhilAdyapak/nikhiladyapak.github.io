@@ -1,3 +1,8 @@
+::selection {
+    background: var(--accent);
+    color: #ffffff;
+}
+
 /* =========================================
    1. RESET & VARIABLES
    ========================================= */
@@ -58,7 +63,7 @@ a { text-decoration: none; transition: 0.3s; }
    ========================================= */
 .hero {
     position: relative;
-    min-height: 90vh; 
+    min-height: 90svh; 
     display: flex;
     align-items: center;
     justify-content: center;
