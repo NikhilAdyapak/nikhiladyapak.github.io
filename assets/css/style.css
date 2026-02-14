@@ -9,6 +9,10 @@
     --border: #30363d;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -239,3 +243,60 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
 }
 
 .purple i { color: #bb86fc; } /* or reuse .blue i { color: #58a6ff; } if you prefer blue */
+
+/* Floating Glass Navbar */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(22, 27, 34, 0.8); /* Dark semi-transparent */
+    backdrop-filter: blur(10px);
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.nav-btn {
+    background: var(--accent);
+    color: #fff !important;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 600 !important;
+}
+
+.nav-btn:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* Style for the CV button (Outline style) */
+.cv-btn {
+    background: transparent !important; 
+    border: 1px solid var(--accent);
+    color: var(--accent) !important;
+    margin-right: -15px; /* Pulls it closer to Resume */
+}
+
+.cv-btn:hover {
+    background: rgba(88, 166, 255, 0.1) !important;
+}

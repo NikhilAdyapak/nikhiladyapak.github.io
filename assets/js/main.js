@@ -12,3 +12,5 @@ sr.reveal('.timeline-item', { interval: 100 });
 sr.reveal('.project-card', { interval: 100 });
 sr.reveal('.comm-card', { interval: 100 });
 sr.reveal('.badge-row', { interval: 100 });
+
+document.getElementById('year').textContent = new Date().getFullYear();
