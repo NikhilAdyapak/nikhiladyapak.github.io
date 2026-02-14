@@ -300,3 +300,23 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
 .cv-btn:hover {
     background: rgba(88, 166, 255, 0.1) !important;
 }
+
+/* Mobile Navbar Tweaks */
+@media (max-width: 768px) {
+    .navbar {
+        width: 90%; /* Prevent it from being too wide */
+        padding: 10px 15px; /* Reduce padding */
+        bottom: 20px; /* Move to bottom on mobile for easier thumb reach? Or keep top */
+        top: auto; /* Unset top if moving to bottom */
+    }
+    .nav-links {
+        gap: 15px; /* Reduce gap */
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+    }
+    .nav-links a {
+        font-size: 0.8rem; /* Smaller text */
+    }
+    /* Hide "CV" text and just show icon if you had one, or just keep it simple */
+}
