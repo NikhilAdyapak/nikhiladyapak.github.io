@@ -13,6 +13,21 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color); 
+}
+::-webkit-scrollbar-thumb {
+    background: #30363d; 
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent); 
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -23,7 +38,11 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4 { color: #fff; font-weight: 700; }
+h1, h2, h3, h4 { 
+    color: #fff; 
+    font-weight: 700; 
+    letter-spacing: -0.5px; 
+}
 a { text-decoration: none; transition: 0.3s; }
 
 .container { max-width: 1100px; margin: 0 auto; padding: 0 25px; }
@@ -35,7 +54,6 @@ a { text-decoration: none; transition: 0.3s; }
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Deep gradient background */
     background: radial-gradient(circle at 50% 30%, #1c2333 0%, #0d1117 70%);
     overflow: hidden;
 }
@@ -55,7 +73,7 @@ a { text-decoration: none; transition: 0.3s; }
     position: relative;
     z-index: 10;
     text-align: center;
-    padding-bottom: 0px !important; /* Forces content to sit tight on the wave */
+    padding-bottom: 0px !important;
 }
 
 /* Profile Picture & Frame */
@@ -65,7 +83,7 @@ a { text-decoration: none; transition: 0.3s; }
     margin-bottom: 25px;
 }
 .profile-pic {
-    width: 280px; height: 280px; /* Massive Size */
+    width: 280px; height: 280px;
     border-radius: 50%;
     border: 6px solid var(--accent);
     box-shadow: 0 0 60px rgba(88, 166, 255, 0.3);
@@ -85,7 +103,7 @@ a { text-decoration: none; transition: 0.3s; }
 .social-btn {
     display: flex; align-items: center; gap: 10px;
     padding: 12px 25px;
-    background: rgba(255, 255, 255, 0.1); /* Visible Glass */
+    background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50px;
     color: #fff;
@@ -103,18 +121,16 @@ a { text-decoration: none; transition: 0.3s; }
 .social-btn i { font-size: 1.2rem; }
 
 /* --- SECTIONS --- */
-
 .section { 
-    padding-top: 10px;    /* "0 or very less space" before Title */
-    padding-bottom: 50px; /* "less to medium space" after Content */
+    padding-top: 10px;    
+    padding-bottom: 50px; 
     border-bottom: 1px solid var(--border); 
 }
 
-
 .section-title { 
     font-size: 2rem; 
-    margin-top: 0;        /* No extra margin pushing it down */
-    margin-bottom: 30px;  /* Space between Title and Content */
+    margin-top: 0;        
+    margin-bottom: 30px;  
     text-align: center; 
 }
 
@@ -122,11 +138,6 @@ a { text-decoration: none; transition: 0.3s; }
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
 .about-text p { color: var(--text-muted); margin-bottom: 25px; font-size: 1.1rem; }
 .about-text strong { color: #fff; }
-.hiring-box { 
-    background: rgba(88, 166, 255, 0.1); border-left: 4px solid var(--accent); 
-    padding: 20px; border-radius: 6px; color: var(--accent); font-weight: 500; display: flex; gap: 15px; align-items: center;
-}
-.hiring-box i { font-size: 1.5rem; }
 
 .hiring-note {
     background: rgba(88, 166, 255, 0.1);
@@ -147,30 +158,31 @@ a { text-decoration: none; transition: 0.3s; }
 .area-card {
     background: var(--card-bg); padding: 25px; border-radius: 12px; border: 1px solid var(--border);
     display: flex; gap: 20px; align-items: flex-start;
+    transition: 0.3s;
+}
+.area-card:hover {
+    box-shadow: 0 0 15px rgba(88, 166, 255, 0.1);
+    border-color: var(--accent);
 }
 .area-card i { font-size: 2rem; color: var(--accent); margin-top: 5px; }
 .area-card h4 { font-size: 1.2rem; margin-bottom: 5px; }
 .area-card p { font-size: 0.95rem; color: var(--text-muted); margin: 0; }
 
-/* TECH STACK (Grid & Large Badges) */
-.skills-grid-layout { display: flex; flex-direction: column; gap: 40px; }
+/* TECH STACK */
 .badge-row h3 { 
     font-size: 1.2rem; color: var(--text-muted); margin-bottom: 15px; 
     border-bottom: 1px solid var(--border); padding-bottom: 10px; display: inline-block;
 }
 .badge-group { display: flex; flex-wrap: wrap; gap: 15px; }
-.badge-group img { height: 35px; } /* Larger Badges */
+.badge-group img { height: 35px; transition: transform 0.2s; }
+.badge-group img:hover { transform: scale(1.1); }
 
-/* TIMELINE (With Logos) */
+/* TIMELINE */
 .timeline { position: relative; max-width: 900px; margin: 0 auto; padding-left: 40px; }
 .timeline::before {
     content: ''; position: absolute; left: 30px; top: 0; bottom: 0; width: 3px; background: var(--border);
 }
-.timeline-item { 
-    position: relative; 
-    margin-bottom: 40px; /* Reduced from 60px */
-    padding-left: 70px; 
-}
+.timeline-item { position: relative; margin-bottom: 40px; padding-left: 70px; }
 .timeline-logo-wrapper {
     position: absolute; left: 0; top: 0;
     width: 60px; height: 60px; border-radius: 50%;
@@ -191,13 +203,17 @@ a { text-decoration: none; transition: 0.3s; }
 .tags { display: flex; gap: 10px; margin-bottom: 15px; }
 .tags span { font-size: 0.8rem; background: var(--border); padding: 4px 10px; border-radius: 4px; }
 
-/* PROJECTS */
+/* PROJECTS & COMMUNITY */
 .projects-grid, .community-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
 .project-card, .comm-card {
     background: var(--card-bg); padding: 30px; border-radius: 12px; border: 1px solid var(--border);
     display: flex; flex-direction: column; transition: 0.3s;
 }
-.project-card:hover, .comm-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+.project-card:hover, .comm-card:hover { 
+    transform: translateY(-5px); 
+    border-color: var(--accent); 
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.15); 
+}
 
 .card-head { display: flex; justify-content: space-between; margin-bottom: 15px; }
 .card-head .icon { font-size: 2rem; color: var(--text-muted); }
@@ -213,13 +229,63 @@ a { text-decoration: none; transition: 0.3s; }
 .tech-tags img { height: 20px; }
 .private-tag { font-size: 0.9rem; color: var(--text-muted); font-style: italic; }
 
-/* COMMUNITY */
 .comm-card { flex-direction: row; gap: 20px; align-items: flex-start; }
 .comm-card i { font-size: 2.5rem; margin-top: 5px; flex-shrink: 0; }
-.gold i { color: #ffd700; } .blue i { color: #58a6ff; } .green i { color: #4caf50; }
+.gold i { color: #ffd700; } .blue i { color: #58a6ff; } .green i { color: #4caf50; } .purple i { color: #bb86fc; }
 .comm-card p { color: var(--text-muted); margin: 0; }
+.vol-tag {
+    font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; font-weight: 700;
+    color: var(--accent); display: block; margin-bottom: 5px; opacity: 0.8;
+}
 
 footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-size: 0.9rem; }
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(22, 27, 34, 0.85);
+    backdrop-filter: blur(12px);
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+.nav-links {
+    display: flex; gap: 30px; list-style: none; align-items: center;
+}
+.nav-links a {
+    color: var(--text-muted); font-weight: 500; font-size: 0.95rem; position: relative;
+}
+.nav-links a:hover, .nav-links a.active-link {
+    color: var(--accent);
+}
+.nav-btn {
+    background: var(--accent); color: #fff !important; padding: 6px 16px; border-radius: 20px; font-weight: 600 !important;
+}
+.nav-btn:hover { background: var(--accent-hover); transform: translateY(-2px); }
+.cv-btn {
+    background: transparent !important; border: 1px solid var(--accent); color: var(--accent) !important; margin-right: -15px;
+}
+.cv-btn:hover { background: rgba(88, 166, 255, 0.1) !important; }
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed; bottom: 30px; right: 30px;
+    background: var(--accent); color: #fff;
+    width: 45px; height: 45px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(88, 166, 255, 0.4);
+    opacity: 0; pointer-events: none; transition: 0.3s;
+    z-index: 999;
+}
+.back-to-top.visible { opacity: 1; pointer-events: auto; }
+.back-to-top:hover { transform: translateY(-5px); background: var(--accent-hover); }
 
 /* MOBILE */
 @media (max-width: 768px) {
@@ -229,94 +295,12 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
     .timeline { padding-left: 0; }
     .timeline::before { left: 29px; }
     .comm-card { flex-direction: column; text-align: center; align-items: center; }
-}
-
-.vol-tag {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 700;
-    color: var(--accent); /* Uses your site's blue */
-    display: block;
-    margin-bottom: 5px;
-    opacity: 0.8;
-}
-
-.purple i { color: #bb86fc; } /* or reuse .blue i { color: #58a6ff; } if you prefer blue */
-
-/* Floating Glass Navbar */
-.navbar {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1000;
-    background: rgba(22, 27, 34, 0.8); /* Dark semi-transparent */
-    backdrop-filter: blur(10px);
-    padding: 10px 30px;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-}
-
-.nav-links {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-    align-items: center;
-}
-
-.nav-links a {
-    color: var(--text-muted);
-    font-weight: 500;
-    font-size: 0.95rem;
-}
-
-.nav-links a:hover {
-    color: var(--accent);
-}
-
-.nav-btn {
-    background: var(--accent);
-    color: #fff !important;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-weight: 600 !important;
-}
-
-.nav-btn:hover {
-    background: var(--accent-hover);
-    transform: translateY(-2px);
-}
-
-/* Style for the CV button (Outline style) */
-.cv-btn {
-    background: transparent !important; 
-    border: 1px solid var(--accent);
-    color: var(--accent) !important;
-    margin-right: -15px; /* Pulls it closer to Resume */
-}
-
-.cv-btn:hover {
-    background: rgba(88, 166, 255, 0.1) !important;
-}
-
-/* Mobile Navbar Tweaks */
-@media (max-width: 768px) {
+    
     .navbar {
-        width: 90%; /* Prevent it from being too wide */
-        padding: 10px 15px; /* Reduce padding */
-        bottom: 20px; /* Move to bottom on mobile for easier thumb reach? Or keep top */
-        top: auto; /* Unset top if moving to bottom */
+        width: 90%; padding: 10px 15px;
     }
     .nav-links {
-        gap: 15px; /* Reduce gap */
-        justify-content: space-between;
-        width: 100%;
-        padding: 0;
+        gap: 15px; width: 100%; justify-content: space-between;
     }
-    .nav-links a {
-        font-size: 0.8rem; /* Smaller text */
-    }
-    /* Hide "CV" text and just show icon if you had one, or just keep it simple */
+    .nav-links a { font-size: 0.8rem; }
 }
