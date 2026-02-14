@@ -4,12 +4,12 @@ const sr = ScrollReveal({
     distance: '30px',
     duration: 1000,
     delay: 100,
-    reset: false // Keeps element visible once revealed
+    reset: false
 });
 
 sr.reveal('.hero-content');
 sr.reveal('.about-grid', { delay: 200 });
-sr.reveal('.timeline-item', { interval: 150 }); // Staggered
+sr.reveal('.timeline-item', { interval: 150 });
 sr.reveal('.project-card', { interval: 150 });
 sr.reveal('.comm-card', { interval: 150 });
 sr.reveal('.badge-row', { interval: 100 });
@@ -70,27 +70,28 @@ function typeWriter() {
     const currentRole = roles[roleIndex];
     const element = document.querySelector('.typewriter');
     
-    if (isDeleting) {
-        element.textContent = currentRole.substring(0, charIndex - 1);
-        charIndex--;
-    } else {
-        element.textContent = currentRole.substring(0, charIndex + 1);
-        charIndex++;
+    if (element) { // Safety check
+        if (isDeleting) {
+            element.textContent = currentRole.substring(0, charIndex - 1);
+            charIndex--;
+        } else {
+            element.textContent = currentRole.substring(0, charIndex + 1);
+            charIndex++;
+        }
+
+        let speed = isDeleting ? deleteSpeed : typeSpeed;
+
+        if (!isDeleting && charIndex === currentRole.length) {
+            speed = delayBetween;
+            isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            roleIndex = (roleIndex + 1) % roles.length;
+            speed = 500;
+        }
+
+        setTimeout(typeWriter, speed);
     }
-
-    let speed = isDeleting ? deleteSpeed : typeSpeed;
-
-    if (!isDeleting && charIndex === currentRole.length) {
-        speed = delayBetween; // Pause at end
-        isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-        isDeleting = false;
-        roleIndex = (roleIndex + 1) % roles.length;
-        speed = 500; // Pause before next word
-    }
-
-    setTimeout(typeWriter, speed);
 }
 
-// Start the animation
 document.addEventListener('DOMContentLoaded', typeWriter);
