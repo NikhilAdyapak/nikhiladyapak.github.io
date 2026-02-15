@@ -206,6 +206,11 @@ a { text-decoration: none; transition: 0.3s; }
 .area-card p { font-size: 0.95rem; color: var(--text-muted); margin: 0; }
 
 /* --- Tech Stack Badges --- */
+/* Add this specific rule to separate the rows */
+.badge-row {
+    margin-bottom: 40px; /* Pushes the next section down */
+}
+
 .badge-row h3 { 
     font-size: 1.2rem; color: var(--text-muted); margin-bottom: 15px; 
     border-bottom: 1px solid var(--border); padding-bottom: 10px; display: inline-block;

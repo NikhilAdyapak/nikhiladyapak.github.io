@@ -54,9 +54,9 @@ window.addEventListener('scroll', () => {
 /* --- Typewriter Effect --- */
 const roles = [
     "Scalable ML Systems",
-    "Cloud Infrastructure",
     "Distributed AI",
-    "Production MLOps"
+    "Production MLOps",
+    "Cloud Infrastructure"
 ];
 
 let roleIndex = 0;
