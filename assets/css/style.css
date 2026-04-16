@@ -187,8 +187,14 @@ a { text-decoration: none; transition: 0.3s; }
     margin-top: 20px;
     font-size: 1rem;
     display: flex; align-items: center; gap: 15px;
+    animation: pulse-border 2s ease-in-out infinite;
 }
 .hiring-note i { font-size: 1.5rem; }
+
+@keyframes pulse-border {
+    0%, 100% { border-left-color: var(--accent); }
+    50% { border-left-color: var(--accent-hover); }
+}
 
 .core-areas { display: flex; flex-direction: column; gap: 20px; }
 .area-card {
@@ -323,6 +329,10 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
 .nav-links a:hover, .nav-links a.active-link {
     color: var(--accent);
 }
+.nav-links a.active-link {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+}
 .nav-btn {
     background: var(--accent); color: #fff !important; padding: 6px 16px; 
     border-radius: 20px; font-weight: 600 !important;
@@ -383,4 +393,61 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
     .nav-links::-webkit-scrollbar { display: none; }
     
     .nav-links a { font-size: 0.9rem; padding: 5px 10px; }
+}
+
+/* =========================================
+   8. V4.0.0 ADDITIONS
+   ========================================= */
+
+/* Hero stats bar */
+.stat-bar {
+    display: flex; flex-wrap: wrap; justify-content: center;
+    gap: 16px; margin: 24px 0;
+}
+.stat-item {
+    display: flex; flex-direction: column; align-items: center;
+    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid rgba(88, 166, 255, 0.25);
+    border-radius: 12px; padding: 12px 22px;
+    backdrop-filter: blur(8px); min-width: 120px;
+}
+.stat-num {
+    font-size: 1.6rem; font-weight: 800;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace;
+}
+.stat-label {
+    font-size: 0.75rem; color: var(--text-muted);
+    text-align: center; margin-top: 2px;
+}
+
+/* Project card top accent */
+.project-card { border-top: 2px solid var(--border); }
+.project-card:hover { border-top-color: var(--accent); }
+
+/* Education section — reuses .timeline styles */
+.gpa-chip {
+    display: inline-block;
+    border: 1px solid var(--accent); color: var(--accent);
+    padding: 2px 12px; border-radius: 20px;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;
+    font-weight: 600;
+}
+.course-tags {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;
+}
+.course-tags span {
+    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 3px 10px; border-radius: 20px; font-size: 0.8rem;
+}
+
+/* Currently-studying row in About */
+.currently-studying {
+    display: flex; align-items: flex-start; gap: 10px;
+    margin-top: 16px; flex-wrap: wrap;
+}
+.study-label {
+    color: var(--text-muted); font-size: 0.85rem;
+    padding-top: 5px; white-space: nowrap;
 }
