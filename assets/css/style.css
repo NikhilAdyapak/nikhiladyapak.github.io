@@ -111,8 +111,8 @@ a { text-decoration: none; transition: 0.3s; }
     letter-spacing: -1px; 
 }
 .gradient-text {
-    background: linear-gradient(135deg, #ffffff 0%, var(--accent) 100%);
-    background-clip: text; 
+    background: linear-gradient(135deg, #ffffff 0%, var(--accent) 60%, #bb86fc 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -170,7 +170,19 @@ a { text-decoration: none; transition: 0.3s; }
     padding-bottom: 60px; 
     border-bottom: 1px solid var(--border); 
 }
-.section-title { font-size: 2rem; margin-top: 0; margin-bottom: 40px; text-align: center; }
+.section-title {
+    font-size: 2rem; margin-top: 0; margin-bottom: 40px; text-align: center;
+    position: relative; display: inline-block;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px; height: 3px;
+    margin: 8px auto 0;
+    background: linear-gradient(90deg, var(--accent), #bb86fc);
+    border-radius: 2px;
+}
+.section-title.center { display: block; }
 
 /* --- About Grid --- */
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -187,8 +199,14 @@ a { text-decoration: none; transition: 0.3s; }
     margin-top: 20px;
     font-size: 1rem;
     display: flex; align-items: center; gap: 15px;
+    animation: pulse-border 2s ease-in-out infinite;
 }
 .hiring-note i { font-size: 1.5rem; }
+
+@keyframes pulse-border {
+    0%, 100% { border-left-color: var(--accent); }
+    50% { border-left-color: var(--accent-hover); }
+}
 
 .core-areas { display: flex; flex-direction: column; gap: 20px; }
 .area-card {
@@ -323,6 +341,10 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
 .nav-links a:hover, .nav-links a.active-link {
     color: var(--accent);
 }
+.nav-links a.active-link {
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+}
 .nav-btn {
     background: var(--accent); color: #fff !important; padding: 6px 16px; 
     border-radius: 20px; font-weight: 600 !important;
@@ -383,4 +405,195 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
     .nav-links::-webkit-scrollbar { display: none; }
     
     .nav-links a { font-size: 0.9rem; padding: 5px 10px; }
+}
+
+/* =========================================
+   8. V4.0.0 ADDITIONS
+   ========================================= */
+
+/* Stats bar (About section) */
+.stat-bar {
+    display: flex; flex-wrap: wrap; justify-content: flex-start;
+    gap: 12px; margin-top: 24px;
+}
+.stat-item {
+    display: flex; flex-direction: column; align-items: center;
+    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid rgba(88, 166, 255, 0.25);
+    border-radius: 12px; padding: 12px 22px;
+    backdrop-filter: blur(8px); min-width: 120px;
+}
+.stat-num {
+    font-size: 1.6rem; font-weight: 800;
+    color: var(--accent); font-family: 'JetBrains Mono', monospace;
+}
+.stat-label {
+    font-size: 0.75rem; color: var(--text-muted);
+    text-align: center; margin-top: 2px;
+}
+
+/* Project card top accent */
+.project-card { border-top: 2px solid var(--border); }
+.project-card:hover { border-top-color: var(--accent); }
+
+/* Education section — reuses .timeline styles */
+.gpa-chip {
+    display: inline-block;
+    border: 1px solid var(--accent); color: var(--accent);
+    padding: 2px 12px; border-radius: 20px;
+    font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;
+    font-weight: 600;
+}
+.course-tags {
+    display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;
+}
+.course-tags span {
+    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 3px 10px; border-radius: 20px; font-size: 0.8rem;
+}
+
+/* Currently-studying row in About */
+.currently-studying {
+    display: flex; align-items: flex-start; gap: 10px;
+    margin-top: 16px; flex-wrap: wrap;
+}
+.study-label {
+    color: var(--text-muted); font-size: 0.85rem;
+    padding-top: 5px; white-space: nowrap;
+}
+
+/* ---- Alternating section backgrounds ---- */
+.skills-section, #projects {
+    background: var(--card-bg);
+}
+
+/* ---- Section title gradient text ---- */
+.section-title {
+    background: linear-gradient(135deg, #e6edf3 50%, var(--accent) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---- Timeline gradient vertical line ---- */
+.timeline::before {
+    background: linear-gradient(to bottom, var(--accent) 0%, #bb86fc 60%, var(--border) 100%) !important;
+}
+
+/* ---- Icon boxes (About area cards) ---- */
+.icon-box {
+    width: 48px; height: 48px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+}
+.icon-box.blue  { background: rgba(88, 166, 255, 0.15); }
+.icon-box.blue  i { color: var(--accent) !important; font-size: 1.4rem; }
+.icon-box.purple { background: rgba(187, 134, 252, 0.15); }
+.icon-box.purple i { color: #bb86fc !important; font-size: 1.4rem; }
+.icon-box.green  { background: rgba(76, 175, 80, 0.15); }
+.icon-box.green  i { color: #4caf50 !important; font-size: 1.4rem; }
+
+/* ---- Area cards — always-on accent left border ---- */
+.area-card {
+    border-left: 3px solid var(--accent) !important;
+}
+
+/* ---- Project card icons — accent colored ---- */
+.card-head .icon { color: var(--accent); }
+
+/* ---- Experience tag chips — accent styled ---- */
+.tags span {
+    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid rgba(88, 166, 255, 0.25);
+    color: var(--accent);
+}
+
+/* =========================================
+   9. MAJOR VISUAL OVERHAUL
+   ========================================= */
+
+/* --- Animated gradient orbs in hero background --- */
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(88, 166, 255, 0.13) 0%, transparent 65%);
+    top: -100px; left: -100px;
+    animation: orb-drift 12s ease-in-out infinite;
+    z-index: 0; pointer-events: none; border-radius: 50%;
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    width: 450px; height: 450px;
+    background: radial-gradient(circle, rgba(187, 134, 252, 0.1) 0%, transparent 65%);
+    bottom: 40px; right: -80px;
+    animation: orb-drift 16s ease-in-out infinite reverse;
+    z-index: 0; pointer-events: none; border-radius: 50%;
+}
+@keyframes orb-drift {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%       { transform: translate(50px, -40px) scale(1.06); }
+    66%       { transform: translate(-30px, 25px) scale(0.94); }
+}
+
+/* --- Bigger, bolder hero title --- */
+.hero-text h1 { font-size: 4rem; }
+
+/* --- Stronger profile glow (blue + purple) --- */
+.profile-pic {
+    box-shadow: 0 0 60px rgba(88, 166, 255, 0.45),
+                0 0 120px rgba(187, 134, 252, 0.2);
+}
+
+/* --- Glassmorphism project & community cards --- */
+.project-card, .comm-card {
+    background: rgba(22, 27, 34, 0.55) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.07) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+}
+.project-card:hover, .comm-card:hover {
+    background: rgba(22, 27, 34, 0.8) !important;
+    border-color: rgba(88, 166, 255, 0.4) !important;
+    box-shadow: 0 12px 48px rgba(88, 166, 255, 0.2),
+                0 0 0 1px rgba(88, 166, 255, 0.12);
+    border-top-color: var(--accent) !important;
+}
+
+/* --- Timeline logo wrapper glow --- */
+.timeline-logo-wrapper {
+    box-shadow: 0 0 0 2px rgba(88, 166, 255, 0.5),
+                0 0 18px rgba(88, 166, 255, 0.3);
+    transition: box-shadow 0.3s;
+}
+.timeline-item:hover .timeline-logo-wrapper {
+    box-shadow: 0 0 0 2px var(--accent),
+                0 0 28px rgba(88, 166, 255, 0.5);
+}
+
+/* --- Area card glassmorphism --- */
+.area-card {
+    background: rgba(22, 27, 34, 0.6) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+
+/* --- Footer gradient top border --- */
+footer {
+    border-top: 1px solid;
+    border-image: linear-gradient(90deg, transparent 0%, var(--accent) 30%, #bb86fc 70%, transparent 100%) 1;
+}
+
+/* --- Stat item glow --- */
+.stat-item {
+    box-shadow: 0 4px 20px rgba(88, 166, 255, 0.12);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.stat-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(88, 166, 255, 0.25);
 }

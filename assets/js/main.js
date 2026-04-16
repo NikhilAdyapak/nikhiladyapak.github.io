@@ -10,6 +10,7 @@ const sr = ScrollReveal({
 sr.reveal('.hero-content');
 sr.reveal('.about-grid', { delay: 200 });
 sr.reveal('.timeline-item', { interval: 150 });
+sr.reveal('#education .timeline-item', { interval: 150 });
 sr.reveal('.project-card', { interval: 150 });
 sr.reveal('.comm-card', { interval: 150 });
 sr.reveal('.badge-row', { interval: 100 });
@@ -54,9 +55,10 @@ window.addEventListener('scroll', () => {
 /* --- Typewriter Effect --- */
 const roles = [
     "Scalable ML Systems",
-    "Distributed AI",
+    "Distributed AI Pipelines",
     "Production MLOps",
-    "Cloud Infrastructure"
+    "Cloud Infrastructure",
+    "Edge AI & On-Device Inference"
 ];
 
 let roleIndex = 0;
