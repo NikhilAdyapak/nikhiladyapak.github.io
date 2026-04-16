@@ -57,6 +57,7 @@ const roles = [
     "Scalable ML Systems",
     "Distributed AI Pipelines",
     "Production MLOps",
+    "Cloud Infrastructure",
     "Edge AI & On-Device Inference"
 ];
 
