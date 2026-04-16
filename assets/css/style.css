@@ -111,8 +111,8 @@ a { text-decoration: none; transition: 0.3s; }
     letter-spacing: -1px; 
 }
 .gradient-text {
-    background: linear-gradient(135deg, #ffffff 0%, var(--accent) 100%);
-    background-clip: text; 
+    background: linear-gradient(135deg, #ffffff 0%, var(--accent) 60%, #bb86fc 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
@@ -170,7 +170,19 @@ a { text-decoration: none; transition: 0.3s; }
     padding-bottom: 60px; 
     border-bottom: 1px solid var(--border); 
 }
-.section-title { font-size: 2rem; margin-top: 0; margin-bottom: 40px; text-align: center; }
+.section-title {
+    font-size: 2rem; margin-top: 0; margin-bottom: 40px; text-align: center;
+    position: relative; display: inline-block;
+}
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px; height: 3px;
+    margin: 8px auto 0;
+    background: linear-gradient(90deg, var(--accent), #bb86fc);
+    border-radius: 2px;
+}
+.section-title.center { display: block; }
 
 /* --- About Grid --- */
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
@@ -399,10 +411,10 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
    8. V4.0.0 ADDITIONS
    ========================================= */
 
-/* Hero stats bar */
+/* Stats bar (About section) */
 .stat-bar {
-    display: flex; flex-wrap: wrap; justify-content: center;
-    gap: 16px; margin: 24px 0;
+    display: flex; flex-wrap: wrap; justify-content: flex-start;
+    gap: 12px; margin-top: 24px;
 }
 .stat-item {
     display: flex; flex-direction: column; align-items: center;
@@ -450,4 +462,50 @@ footer { text-align: center; padding: 50px 0; color: var(--text-muted); font-siz
 .study-label {
     color: var(--text-muted); font-size: 0.85rem;
     padding-top: 5px; white-space: nowrap;
+}
+
+/* ---- Alternating section backgrounds ---- */
+.skills-section, #projects {
+    background: var(--card-bg);
+}
+
+/* ---- Section title gradient text ---- */
+.section-title {
+    background: linear-gradient(135deg, #e6edf3 50%, var(--accent) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---- Timeline gradient vertical line ---- */
+.timeline::before {
+    background: linear-gradient(to bottom, var(--accent) 0%, #bb86fc 60%, var(--border) 100%) !important;
+}
+
+/* ---- Icon boxes (About area cards) ---- */
+.icon-box {
+    width: 48px; height: 48px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+}
+.icon-box.blue  { background: rgba(88, 166, 255, 0.15); }
+.icon-box.blue  i { color: var(--accent) !important; font-size: 1.4rem; }
+.icon-box.purple { background: rgba(187, 134, 252, 0.15); }
+.icon-box.purple i { color: #bb86fc !important; font-size: 1.4rem; }
+.icon-box.green  { background: rgba(76, 175, 80, 0.15); }
+.icon-box.green  i { color: #4caf50 !important; font-size: 1.4rem; }
+
+/* ---- Area cards — always-on accent left border ---- */
+.area-card {
+    border-left: 3px solid var(--accent) !important;
+}
+
+/* ---- Project card icons — accent colored ---- */
+.card-head .icon { color: var(--accent); }
+
+/* ---- Experience tag chips — accent styled ---- */
+.tags span {
+    background: rgba(88, 166, 255, 0.08);
+    border: 1px solid rgba(88, 166, 255, 0.25);
+    color: var(--accent);
 }
