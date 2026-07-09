@@ -291,7 +291,7 @@ strong { color: var(--text-main); font-weight: 600; }
 /* =========================================
    3. HIRING BANNER + METRICS
    ========================================= */
-.hiring-banner { padding: 38px 0 8px; position: relative; z-index: 2; }
+.hiring-banner { padding: 28px 0 4px; position: relative; z-index: 2; }
 .hiring-card {
     display: flex; align-items: center; justify-content: space-between;
     gap: 30px; flex-wrap: wrap;
@@ -342,7 +342,7 @@ strong { color: var(--text-main); font-weight: 600; }
 .hiring-cta.secondary { background: transparent; border: 1px solid var(--accent); color: var(--accent); }
 .hiring-cta.secondary:hover { background: var(--accent-soft); transform: translateY(-3px); }
 
-.metrics-band { padding: 26px 0 14px; }
+.metrics-band { padding: 18px 0 6px; }
 .metrics-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
@@ -372,7 +372,7 @@ strong { color: var(--text-main); font-weight: 600; }
 /* =========================================
    4. SECTIONS & BIG TITLES
    ========================================= */
-.section { padding: 80px 0; position: relative; }
+.section { padding: 50px 0; position: relative; }
 .section-alt { background: var(--bg-soft); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
 .big-title {
@@ -380,7 +380,7 @@ strong { color: var(--text-main); font-weight: 600; }
     align-items: baseline;
     gap: 18px;
     font-size: clamp(1.7rem, 3.4vw, 2.4rem);
-    margin-bottom: 46px;
+    margin-bottom: 30px;
 }
 .title-num {
     font-family: var(--mono);
@@ -472,8 +472,8 @@ strong { color: var(--text-main); font-weight: 600; }
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 10px 0 44px;
-    padding-top: 8px;
+    margin: 6px 0 34px;
+    padding-top: 6px;
 }
 .journey-line {
     position: absolute;
@@ -562,7 +562,7 @@ strong { color: var(--text-main); font-weight: 600; }
     font-family: var(--mono);
     font-size: 0.82rem;
     color: var(--text-muted);
-    margin: -26px 0 30px;
+    margin: -18px 0 24px;
 }
 .xp-stack { display: flex; flex-direction: column; gap: 16px; }
 .xp-card {
@@ -1024,7 +1024,7 @@ strong { color: var(--text-main); font-weight: 600; }
    ========================================= */
 footer {
     text-align: center;
-    padding: 54px 0;
+    padding: 40px 0;
     color: var(--text-muted);
     font-size: 0.95rem;
     border-top: 1px solid;
