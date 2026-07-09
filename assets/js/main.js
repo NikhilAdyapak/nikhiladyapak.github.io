@@ -41,9 +41,8 @@ if (heroEl && depth1 && depth2 && canHover && !reduceMotion) {
     });
 }
 
-/* --- Journey timeline: node click swaps experience panel --- */
+/* --- Journey strip: career overview; click a stop to jump to that role --- */
 const journeyNodes = document.querySelectorAll('.journey-node');
-const xpPanels = document.querySelectorAll('.xp-panel');
 const journeyFill = document.getElementById('journeyFill');
 
 function updateJourneyFill(activeNode) {
@@ -58,16 +57,17 @@ function updateJourneyFill(activeNode) {
 
 journeyNodes.forEach(node => {
     node.addEventListener('click', () => {
-        journeyNodes.forEach(n => {
-            n.classList.remove('active');
-            n.setAttribute('aria-selected', 'false');
-        });
-        xpPanels.forEach(p => p.classList.remove('active'));
+        journeyNodes.forEach(n => n.classList.remove('active'));
         node.classList.add('active');
-        node.setAttribute('aria-selected', 'true');
-        const panel = document.getElementById(`panel-${node.dataset.panel}`);
-        if (panel) panel.classList.add('active');
         updateJourneyFill(node);
+
+        const card = document.querySelector(node.dataset.target);
+        if (card) {
+            card.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'center' });
+            card.classList.remove('flash');
+            void card.offsetWidth; // restart the highlight animation
+            card.classList.add('flash');
+        }
     });
 });
 
