@@ -182,7 +182,7 @@ function copyEmail(btn) {
     });
 }
 
-['copyEmail', 'copyEmailBig'].forEach(id => {
+['copyEmail', 'copyEmailBig', 'copyEmailContact'].forEach(id => {
     const btn = document.getElementById(id);
     if (btn) btn.addEventListener('click', () => copyEmail(btn));
 });
@@ -356,7 +356,7 @@ const TERM_COMMANDS = {
     about: 'AI Intern @ Ciroos (SRE-agent evals, multi-cloud fault simulation).\nMS Data Science @ UW-Madison. Ex-Senior SWE @ Bosch ADAS:\nRay/AKS distributed training, 60M+ vector retrieval, MLOps platforms.',
     skills: 'Python · PyTorch · Ray · Kubernetes · MLflow · DVC · Terraform ·\nArgo · CLIP · ElasticSearch · FastAPI · Azure · AWS · GCP · Docker',
     projects: 'Sentinel-Edge AI (Qualcomm Track, air-gapped NPU security auditor)\nCode Runtime Complexity Prediction (Springer 2023, 96% accuracy)\nMLOps POC for Pedestrian Detection (DVC + MLflow + Detectron2)\nType "exit" and scroll to Projects for the full list.',
-    contact: 'email    : nikhiladyapak31@gmail.com\nlinkedin : linkedin.com/in/nikhil-adyapak\ngithub   : github.com/NikhilAdyapak\nphone    : +1 (608) 395-5104',
+    contact: 'email    : nikhiladyapak31@gmail.com\nlinkedin : linkedin.com/in/nikhil-adyapak\ngithub   : github.com/NikhilAdyapak',
     hire: '🟢 Status: ACTIVELY INTERVIEWING\nFall 2026 internships/co-ops (Aug to Dec) + 2027 full-time.\nMLE · ML Systems · MLOps · Data Science.\nType "contact" for coordinates. Let\'s talk.',
     sudo: 'Nice try. Permission granted anyway, I like the initiative. 😄',
     whoami: 'recruiter@dream-company (hopefully)',
