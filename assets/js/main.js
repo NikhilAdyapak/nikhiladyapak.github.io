@@ -357,7 +357,7 @@ const TERM_COMMANDS = {
     skills: 'Python · PyTorch · Ray · Kubernetes · MLflow · DVC · Terraform ·\nArgo · CLIP · ElasticSearch · FastAPI · Azure · AWS · GCP · Docker',
     projects: 'Sentinel-Edge AI (Qualcomm Track, air-gapped NPU security auditor)\nCode Runtime Complexity Prediction (Springer 2023, 96% accuracy)\nMLOps POC for Pedestrian Detection (DVC + MLflow + Detectron2)\nType "exit" and scroll to Projects for the full list.',
     contact: 'email    : nikhiladyapak31@gmail.com\nlinkedin : linkedin.com/in/nikhil-adyapak\ngithub   : github.com/NikhilAdyapak',
-    hire: '🟢 Status: ACTIVELY INTERVIEWING\nSeeking 2027 full-time roles.\nMLE · ML Systems · MLOps · Data Science.\nType "contact" for coordinates. Let\'s talk.',
+    hire: '🟢 Status: ACTIVELY INTERVIEWING\nSeeking 2027 full-time roles.\nMLE · ML Systems · Software · MLOps · Data Science.\nType "contact" for coordinates. Let\'s talk.',
     sudo: 'Nice try. Permission granted anyway, I like the initiative. 😄',
     whoami: 'recruiter@dream-company (hopefully)',
     ls: 'about.md  experience/  projects/  skills.json  resume.pdf  hire-me.txt'
