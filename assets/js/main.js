@@ -353,7 +353,7 @@ const TERM_COMMANDS = {
         '  clear      : clear the screen',
         '  exit       : close terminal'
     ].join('\n'),
-    about: 'AI Intern @ Ciroos (SRE-agent evals, multi-cloud fault simulation).\nMS Data Science @ UW-Madison. Ex-Senior SWE @ Bosch ADAS:\nRay/AKS distributed training, 60M+ vector retrieval, MLOps platforms.',
+    about: 'AI Intern @ Ciroos (SRE-agent evals across Kubernetes and multi-cloud).\nMS Data Science @ UW-Madison. Ex-Senior SWE @ Bosch ADAS:\nRay/AKS distributed training, 60M+ vector retrieval, MLOps platforms.',
     skills: 'Python · PyTorch · Ray · Kubernetes · MLflow · DVC · Terraform ·\nArgo · CLIP · ElasticSearch · FastAPI · Azure · AWS · GCP · Docker',
     projects: 'Sentinel-Edge AI (Qualcomm Track, air-gapped NPU security auditor)\nCode Runtime Complexity Prediction (Springer 2023, 96% accuracy)\nMLOps POC for Pedestrian Detection (DVC + MLflow + Detectron2)\nType "exit" and scroll to Projects for the full list.',
     contact: 'email    : nikhiladyapak31@gmail.com\nlinkedin : linkedin.com/in/nikhil-adyapak\ngithub   : github.com/NikhilAdyapak',
