@@ -1695,3 +1695,42 @@ strong { color: var(--text-main); font-weight: 600; }
     .bento-stats { grid-template-columns: repeat(2, 1fr); }
     .pmodal-box { padding: 26px 20px; }
 }
+
+/* ============================================================
+   17. BRAND-COLORED SOCIAL ICONS (hero + footer)
+   Each social link keeps its real brand color, so LinkedIn /
+   GitHub / Scholar read instantly instead of a flat blue row.
+   ============================================================ */
+/* Hero: each social button shows its brand color BY DEFAULT */
+.contact-bar .social-btn[href*="linkedin"] {
+    background: rgba(10,102,194,0.18); border-color: rgba(10,102,194,0.6);
+}
+.contact-bar .social-btn[href*="linkedin"] i { color: #4d9fff; }
+.contact-bar .social-btn[href*="github"] {
+    background: rgba(177,186,196,0.10); border-color: rgba(177,186,196,0.5);
+}
+.contact-bar .social-btn[href*="github"] i { color: #ffffff; }
+.contact-bar .social-btn[href*="scholar"] {
+    background: rgba(66,133,244,0.18); border-color: rgba(66,133,244,0.6);
+}
+.contact-bar .social-btn[href*="scholar"] i { color: #6ba4ff; }
+/* full brand fill on hover */
+.contact-bar .social-btn[href*="linkedin"]:hover {
+    background: #0a66c2; border-color: #0a66c2; box-shadow: 0 0 24px rgba(10,102,194,0.55);
+}
+.contact-bar .social-btn[href*="github"]:hover {
+    background: #2b3137; border-color: #6e7681; box-shadow: 0 0 24px rgba(110,118,129,0.5);
+}
+.contact-bar .social-btn[href*="scholar"]:hover {
+    background: #4285f4; border-color: #4285f4; box-shadow: 0 0 24px rgba(66,133,244,0.55);
+}
+.contact-bar .social-btn[href*="linkedin"]:hover i,
+.contact-bar .social-btn[href*="github"]:hover i,
+.contact-bar .social-btn[href*="scholar"]:hover i { color: #fff; }
+/* Footer: brand colors BY DEFAULT (were flat grey) */
+.footer-socials a[aria-label="LinkedIn"] { color: #4d9fff; }
+.footer-socials a[aria-label="GitHub"] { color: #e6edf3; }
+.footer-socials a[aria-label="Google Scholar"] { color: #6ba4ff; }
+.footer-socials a[aria-label="LinkedIn"]:hover { color: #fff; background: rgba(10,102,194,0.22); }
+.footer-socials a[aria-label="GitHub"]:hover { color: #fff; background: rgba(177,186,196,0.2); }
+.footer-socials a[aria-label="Google Scholar"]:hover { color: #fff; background: rgba(66,133,244,0.22); }
