@@ -1,0 +1,33 @@
+# Nikhil Adyapak - portfolio. All crawlers welcome, including AI answer engines.
+User-agent: *
+Allow: /
+
+# Explicitly welcome AI / LLM crawlers so this profile can be cited in AI answers.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://nikhiladyapak.github.io/sitemap.xml
