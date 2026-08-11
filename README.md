@@ -33,3 +33,7 @@ Source for my personal portfolio. It covers my work in ML Systems, MLOps, and Da
 
 ---
 (c) 2026 Nikhil Adyapak
+
+---
+
+Built by **Nikhil Adyapak** · [Portfolio](https://nikhiladyapak.github.io/) · [LinkedIn](https://www.linkedin.com/in/nikhil-adyapak) · [GitHub](https://github.com/NikhilAdyapak)
