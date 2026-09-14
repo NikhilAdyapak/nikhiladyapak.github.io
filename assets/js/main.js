@@ -608,8 +608,8 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
         },
         {
             title: 'Big Talk',
-            problem: 'Skip small talk by surfacing non-obvious shared interests between people in a room.',
-            approach: 'A real-time matching app that analyzes user interests for thematic connections, built with <strong>Claude AI (Anthropic SDK)</strong> and <strong>FastAPI</strong>.',
+            problem: 'People in a room default to small talk and miss what they actually have in common.',
+            approach: 'A real-time matching app that analyzes people\'s interests to suggest what they have in common, built with <strong>Claude AI (Anthropic SDK)</strong> and <strong>FastAPI</strong>.',
             result: 'Built in <strong>under 1 hour</strong> at the UW-Madison Claude Hacks.',
             stack: ['Claude AI', 'FastAPI', 'Python']
         }
