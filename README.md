@@ -1,6 +1,6 @@
 # Nikhil Adyapak - Portfolio Website
 
-Website version 5.7.2
+Website version 5.8.2
 
 > Live site: [nikhiladyapak.github.io](https://nikhiladyapak.github.io/)
 
